@@ -30,8 +30,8 @@ const typingTwo = () => {
 // Delay the function call so that the typing doesn't happen until 1.5s after page has been loaded
 setTimeout(function() { 
     typingOne();
-}, 1000);
+}, 500);
 
 setTimeout(function() {
     typingTwo();
-}, 2300);
+}, 2000);
