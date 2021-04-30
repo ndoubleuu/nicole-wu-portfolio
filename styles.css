@@ -243,17 +243,30 @@ header {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: #414141;
+}
+
+.typingIntro {
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
   margin: 0 auto;
-  padding: 5rem 0;
+  padding-top: 5rem;
   font-family: "Quicksand", sans-serif;
-  font-size: 5rem;
+  font-size: 4.5rem;
+}
+
+h2 {
   text-align: center;
-  width: 45%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3.8rem;
+  padding: 0 12rem;
 }
 
 .container {
@@ -262,7 +275,7 @@ h1 {
   justify-content: center;
 }
 
-h2 {
+h3 {
   font-family: "Lato", sans-serif;
   font-size: 3rem;
   font-weight: 300;
@@ -303,6 +316,9 @@ img {
 }
 
 @media (max-width: 930px) {
+  .typingIntro {
+    height: 20rem;
+  }
   .container {
     flex-direction: column;
     align-items: center;
@@ -310,6 +326,7 @@ img {
   .container-two {
     flex-direction: column;
     align-items: center;
+    padding-right: 0;
   }
   ul {
     display: flex;
@@ -327,12 +344,20 @@ img {
 }
 
 @media (max-width: 735px) {
+  .typingIntro {
+    height: 16rem;
+  }
   h1 {
-    font-size: 4rem;
-    width: 80%;
+    font-size: 3.8rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     height: 23rem;
+  }
+}
+
+@media (max-width: 345px) {
+  h1 {
+    font-size: 3rem;
   }
 }
