@@ -279,7 +279,6 @@ h3 {
   font-family: "Lato", sans-serif;
   font-size: 3rem;
   font-weight: 300;
-  margin-top: 10rem;
   padding: 3rem;
   width: 30rem;
   height: 30rem;
@@ -290,6 +289,7 @@ h3 {
 .container-two {
   display: flex;
   padding-right: 2rem;
+  margin-top: 10rem;
 }
 
 ul {
@@ -320,13 +320,17 @@ img {
     height: 20rem;
   }
   .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+  }
+  img {
+    padding-top: 5rem;
   }
   .container-two {
     flex-direction: column;
     align-items: center;
     padding-right: 0;
+    margin: 6rem 0;
   }
   ul {
     display: flex;
