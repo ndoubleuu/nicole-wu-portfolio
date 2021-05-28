@@ -1,0 +1,31 @@
+{
+    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "Loyal (rainglow)",
+    "open-in-browser.default": "Firefox",
+    "editor.wordWrap": "on",
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontSize": 15,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.accessibilitySupport": "off",
+    "editor.formatOnSave": true,
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/dist/css"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/dist/css"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
+}

@@ -1,0 +1,81 @@
+header {
+  min-height: 100vh;
+  background: linear-gradient(70deg, #dcf4de 60%, #d0d9e5 60%);
+}
+
+h1,
+h2,
+h3 {
+  color: #414141;
+}
+
+.typingIntro {
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 0 auto;
+  padding-top: 5rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 4.5rem;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3.8rem;
+  padding: 0 12rem;
+}
+
+.typer {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 3rem;
+  width: 30rem;
+  height: 30rem;
+  background-color: #f1f1f1;
+  box-shadow: 5px 8px 28px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-two {
+  display: flex;
+  padding-right: 2rem;
+  margin-top: 10rem;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10rem;
+}
+
+a {
+  color: #414141;
+  font-size: 3.5rem;
+  display: block;
+  padding: 1.2rem 0;
+  transition: 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: #838383;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 3rem;
+}
