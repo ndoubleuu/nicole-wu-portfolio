@@ -3,34 +3,12 @@ header {
   background: linear-gradient(70deg, $lightGreen 60%, $lightPurple 60%);
 }
 
-h1,
-h2,
-h3 {
-  color: $black;
-}
-
 .typingIntro {
   height: 24rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-h1,
-h2 {
-  font-family: $quicksand;
-}
-
-h1 {
-  margin: 0 auto;
-  padding-top: 5rem;
-  font-size: 4.5rem;
-}
-
-h2 {
-  text-align: center;
-  font-size: 3.8rem;
-  padding: 0 12rem;
+  margin-bottom: 5rem;
 }
 
 .typer {
@@ -44,12 +22,6 @@ h2 {
 }
 
 h3 {
-  font-family: $lato;
-  font-size: 3rem;
-  font-weight: 300;
-  padding: 3rem;
-  width: 30rem;
-  height: 30rem;
   background-color: $white;
   box-shadow: 5px 8px 28px 0px rgba(0, 0, 0, 0.25);
 }
@@ -60,22 +32,10 @@ h3 {
   margin-top: 10rem;
 }
 
-ul {
-  list-style: none;
-  margin-top: 10rem;
-}
-
 a {
-  color: $black;
-  font-size: 3.5rem;
   display: block;
   padding: 1.2rem 0;
   transition: 0.2s ease;
-}
-
-a:hover,
-a:focus {
-  color: lighten($black, 18%);
 }
 
 img {

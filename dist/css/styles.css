@@ -1,5 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@700&display=swap");
 html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  color: #414141;
+}
+
+h1,
+h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  margin: 0 auto;
+  padding-top: 5rem;
+  font-size: 4.5rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.8rem;
+  padding: 0 12rem;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 3rem;
+  width: 30rem;
+  height: 30rem;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10rem;
+}
+
+a {
+  color: #414141;
+  font-size: 3.5rem;
+}
+
+a:hover, a:focus {
+  color: #6f6f6f;
+}
+
+html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -263,15 +317,6 @@ html {
   overflow: hidden;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  margin: 0;
-  font-size: 2rem;
-}
-
 .wrapper {
   width: 1440px;
   max-width: 90%;
@@ -283,34 +328,12 @@ header {
   background: linear-gradient(70deg, #dcf4de 60%, #d0d9e5 60%);
 }
 
-h1,
-h2,
-h3 {
-  color: #414141;
-}
-
 .typingIntro {
   height: 24rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-h1,
-h2 {
-  font-family: "Quicksand", sans-serif;
-}
-
-h1 {
-  margin: 0 auto;
-  padding-top: 5rem;
-  font-size: 4.5rem;
-}
-
-h2 {
-  text-align: center;
-  font-size: 3.8rem;
-  padding: 0 12rem;
+  margin-bottom: 5rem;
 }
 
 .typer {
@@ -324,12 +347,6 @@ h2 {
 }
 
 h3 {
-  font-family: "Lato", sans-serif;
-  font-size: 3rem;
-  font-weight: 300;
-  padding: 3rem;
-  width: 30rem;
-  height: 30rem;
   background-color: #f1f1f1;
   box-shadow: 5px 8px 28px 0px rgba(0, 0, 0, 0.25);
 }
@@ -340,22 +357,10 @@ h3 {
   margin-top: 10rem;
 }
 
-ul {
-  list-style: none;
-  margin-top: 10rem;
-}
-
 a {
-  color: #414141;
-  font-size: 3.5rem;
   display: block;
   padding: 1.2rem 0;
   transition: 0.2s ease;
-}
-
-a:hover,
-a:focus {
-  color: #6f6f6f;
 }
 
 img {
@@ -371,7 +376,7 @@ img {
     flex-direction: column-reverse;
     align-items: center;
   }
-  img {
+  .container img {
     padding-top: 5rem;
   }
   .containerTwo {
