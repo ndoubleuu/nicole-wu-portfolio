@@ -1,0 +1,48 @@
+nav {
+  position: fixed;
+  width: 100%;
+  background: $white;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.25);
+  .wrapper {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+
+nav li {
+  margin: 0 3.5rem;
+  a {
+    position: relative;
+  }
+}
+
+nav li:nth-child(2) {
+  width: 10rem;
+}
+
+// Link underline, scale from center
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: $darkGreen;
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+  transition: opacity 300ms, transform 300ms;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+  transform: scale(1);
+}
