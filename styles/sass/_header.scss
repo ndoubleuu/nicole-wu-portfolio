@@ -1,7 +1,8 @@
 header {
-  padding-top: 10rem;
-  min-height: 100vh;
+  padding-top: 8rem;
+  height: 75rem;
   background: linear-gradient(70deg, $lightGreen 60%, $lightPurple 60%);
+  position: relative;
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -14,10 +15,41 @@ header {
       width: 40%;
       margin-top: 1rem;
     }
-    img {
-      width: 80%;
+    .imageContainer {
+      width: 55rem;
+      margin-top: -3rem;
+      position: absolute;
+      bottom: -2rem;
+      z-index: 10;
     }
   }
+}
+
+header::before {
+  content: "";
+  background-image: url("../../assets/blob-1.png");
+  background-size: 50rem 56rem;
+  background-repeat: no-repeat;
+  width: 50rem;
+  height: 56rem;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.imageContainer::after {
+  content: "";
+  background-image: url("../../assets/blob-2.png");
+  background-size: 72rem 45rem;
+  background-repeat: no-repeat;
+  width: 72rem;
+  height: 45rem;
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+  bottom: 2rem;
+  left: -10rem;
 }
 
 .typeContainer {
@@ -26,6 +58,8 @@ header {
   align-items: flex-end;
   width: 100%;
   height: 18rem;
+  margin-top: 2rem;
+  z-index: 15;
 }
 
 .typer {

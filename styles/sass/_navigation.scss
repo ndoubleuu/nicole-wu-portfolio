@@ -1,8 +1,9 @@
 nav {
   position: fixed;
   width: 100%;
-  background: $white;
+  background: #f2f2f2f2;
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.25);
+  z-index: 20;
   .wrapper {
     display: flex;
     align-items: center;
@@ -13,13 +14,17 @@ nav {
       align-items: center;
       width: 100%;
     }
+    .logoContainer {
+      width: 15rem;
+    }
   }
 }
 
 nav li {
-  margin: 0 3.5rem;
+  margin: 0 5rem;
   a {
     position: relative;
+    padding: 0.5rem 0;
   }
 }
 
@@ -34,7 +39,7 @@ nav a::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0.1em;
+  height: 0.3rem;
   background-color: $darkGreen;
   opacity: 1;
   transform: scale(0);

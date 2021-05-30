@@ -1,0 +1,26 @@
+@media (min-width: 1500px) {
+  header {
+    height: 90rem;
+    .wrapper .imageContainer {
+      width: 65rem;
+    }
+    h1 {
+      font-size: 5.3rem;
+      margin-top: 8rem;
+    }
+    h2 {
+      font-size: 3.2rem;
+    }
+  }
+  header::before {
+    background-size: 66rem 70rem;
+    width: 66rem;
+    height: 70rem;
+  }
+  .imageContainer::after {
+    background-size: 88rem 55rem;
+    width: 88rem;
+    height: 55rem;
+    left: -12rem;
+  }
+}
