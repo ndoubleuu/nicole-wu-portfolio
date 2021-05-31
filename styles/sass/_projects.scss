@@ -1,0 +1,14 @@
+.projects {
+  background: $lightPurple;
+  padding: 5rem 0;
+  h2 {
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+  .projectContainer {
+    background: $lightGreen;
+    .project {
+      width: 60%;
+    }
+  }
+}

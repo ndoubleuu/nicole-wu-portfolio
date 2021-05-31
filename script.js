@@ -11,7 +11,7 @@ const infoContainer = document.querySelector(".infoContainer");
 displayButton.addEventListener("click", () => {
     console.log(listContainer.style);
     if (listContainer.style.width === "") {
-        displayButton.style.right = "-4rem"
+        displayButton.style.right = "-4.5rem"
         displayButton.innerHTML = `<i class="fas fa-angle-double-right"></i>`;
         listItems.forEach((item) => {
             item.classList.add("hideListItems");
