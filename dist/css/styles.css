@@ -46,6 +46,14 @@ header h2 {
   letter-spacing: 0.5rem;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
 a {
   color: #414141;
   text-decoration: none;
@@ -544,21 +552,23 @@ ol li {
 
 .about .wrapper {
   padding: 8rem 0;
+  min-height: 80vh;
   display: flex;
 }
 
 .about .wrapper .listContainer {
+  font-size: 1.8rem;
   width: 36%;
   padding-right: 8rem;
 }
 
 .about .wrapper .infoContainer {
   width: 64%;
-  padding-left: 8rem;
+  padding-left: 6rem;
 }
 
 .listContainer ol {
-  margin-top: 12.5rem;
+  margin-top: 14rem;
 }
 
 .trait {
@@ -606,7 +616,7 @@ ol li {
   }
   header {
     background: linear-gradient(65deg, #dcf4de 57%, #d0d9e5 57%);
-    height: 90rem;
+    height: 98rem;
   }
   header .wrapper .imageContainer {
     width: 65rem;
@@ -631,19 +641,19 @@ ol li {
   }
   .one {
     right: 16rem;
-    top: 11rem;
+    top: 20rem;
   }
   .two {
     left: 15rem;
-    top: 18rem;
+    top: 26.5rem;
   }
   .three {
     left: 18rem;
-    top: 35rem;
+    top: 43rem;
   }
   .four {
     right: 28rem;
-    top: 46rem;
+    top: 55rem;
   }
   .about {
     background: linear-gradient(90deg, #d0d9e5 38%, #dcf4de 38%);

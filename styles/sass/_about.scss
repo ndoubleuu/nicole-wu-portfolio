@@ -4,19 +4,21 @@
 
 .about .wrapper {
   padding: 8rem 0;
+  min-height: 80vh;
   display: flex;
   .listContainer {
+    font-size: 1.8rem;
     width: 36%;
     padding-right: 8rem;
   }
   .infoContainer {
     width: 64%;
-    padding-left: 8rem;
+    padding-left: 6rem;
   }
 }
 
 .listContainer ol {
-  margin-top: 12.5rem;
+  margin-top: 14rem;
 }
 
 .trait {
