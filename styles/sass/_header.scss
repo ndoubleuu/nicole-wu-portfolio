@@ -66,8 +66,61 @@ header::before {
   display: block;
 }
 
-a {
-  display: block;
-  padding: 1.2rem 0;
-  transition: 0.2s ease;
+ol {
+  z-index: 20;
+  list-style: none;
+  li {
+    position: relative;
+    a {
+      padding: 1rem 1.67rem;
+      background: #f2f2f2f2;
+      border-radius: 50%;
+      box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.number:hover {
+  animation: jiggle 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes jiggle {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.one {
+  right: 16rem;
+  top: 2rem;
+}
+.two {
+  left: 12rem;
+  top: 7rem;
+}
+.three {
+  left: 14.5rem;
+  top: 21rem;
+}
+.four {
+  right: 26.5rem;
+  top: 30rem;
 }

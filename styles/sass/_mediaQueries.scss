@@ -1,4 +1,4 @@
-@media (min-width: 1500px) {
+@media (min-width: 1440px) {
   header {
     height: 90rem;
     .wrapper .imageContainer {
@@ -13,14 +13,30 @@
     }
   }
   header::before {
-    background-size: 66rem 70rem;
-    width: 66rem;
-    height: 70rem;
+    background-size: 68rem 72rem;
+    width: 68rem;
+    height: 72rem;
   }
   .imageContainer::after {
     background-size: 88rem 55rem;
     width: 88rem;
     height: 55rem;
     left: -12rem;
+  }
+  .one {
+    right: 19rem;
+    top: 10rem;
+  }
+  .two {
+    left: 13.5rem;
+    top: 16rem;
+  }
+  .three {
+    left: 16rem;
+    top: 33.5rem;
+  }
+  .four {
+    right: 30rem;
+    top: 44rem;
   }
 }
