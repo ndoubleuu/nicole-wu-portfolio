@@ -3,11 +3,11 @@ nav {
   width: 100%;
   background: #f2f2f2f2;
   box-shadow: 0 0.2rem 1.5rem 0 rgba(0, 0, 0, 0.25);
-  z-index: 20;
+  z-index: 30;
   .wrapper {
+    height: 8rem;
     display: flex;
     align-items: center;
-    height: 10rem;
     ul {
       display: flex;
       justify-content: flex-end;
@@ -15,7 +15,7 @@ nav {
       width: 100%;
     }
     .logoContainer {
-      width: 15rem;
+      width: 12.5rem;
     }
   }
 }

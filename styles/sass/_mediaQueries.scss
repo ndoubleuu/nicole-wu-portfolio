@@ -1,5 +1,9 @@
-@media (min-width: 1440px) {
+@media (min-width: 1500px) {
+  nav .wrapper {
+    height: 12rem;
+  }
   header {
+    background: linear-gradient(65deg, $lightGreen 57%, $lightPurple 57%);
     height: 90rem;
     .wrapper .imageContainer {
       width: 65rem;
@@ -24,19 +28,22 @@
     left: -12rem;
   }
   .one {
-    right: 19rem;
-    top: 10rem;
+    right: 16rem;
+    top: 11rem;
   }
   .two {
-    left: 13.5rem;
-    top: 16rem;
+    left: 15rem;
+    top: 18rem;
   }
   .three {
-    left: 16rem;
-    top: 33.5rem;
+    left: 18rem;
+    top: 35rem;
   }
   .four {
-    right: 30rem;
-    top: 44rem;
+    right: 28rem;
+    top: 46rem;
+  }
+  .about {
+    background: linear-gradient(90deg, $lightPurple 38%, $lightGreen 38%);
   }
 }

@@ -14,6 +14,22 @@ h2,
 h3 {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  margin: 0;
+  font-weight: normal;
+  line-height: 2.5rem;
+  font-size: 2rem;
 }
 
 header h1 {
@@ -26,13 +42,8 @@ header h2 {
   text-align: center;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-ul li {
-  list-style: none;
+.sectionHeading {
+  letter-spacing: 0.5rem;
 }
 
 a {
@@ -44,6 +55,10 @@ nav a {
   font-size: 2.5rem;
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
+}
+
+p {
+  line-height: 2.8rem;
 }
 
 html {
@@ -310,6 +325,11 @@ html {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 .wrapper {
   width: 1440px;
   max-width: 90%;
@@ -320,18 +340,37 @@ img {
   max-width: 100%;
 }
 
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+ol a,
+.listNumber {
+  background: #f2f2f2d9;
+  padding: 1rem 1.67rem;
+  box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
 nav {
   position: fixed;
   width: 100%;
   background: #f2f2f2f2;
   box-shadow: 0 0.2rem 1.5rem 0 rgba(0, 0, 0, 0.25);
-  z-index: 20;
+  z-index: 30;
 }
 
 nav .wrapper {
+  height: 8rem;
   display: flex;
   align-items: center;
-  height: 10rem;
 }
 
 nav .wrapper ul {
@@ -342,7 +381,7 @@ nav .wrapper ul {
 }
 
 nav .wrapper .logoContainer {
-  width: 15rem;
+  width: 12.5rem;
 }
 
 nav li {
@@ -375,8 +414,8 @@ nav a:focus::after {
 
 header {
   padding-top: 8rem;
-  height: 75rem;
-  background: linear-gradient(70deg, #dcf4de 60%, #d0d9e5 60%);
+  height: 70rem;
+  background: linear-gradient(65deg, #dcf4de 60%, #d0d9e5 60%);
   position: relative;
 }
 
@@ -420,15 +459,15 @@ header::before {
 .imageContainer::after {
   content: "";
   background-image: url("../../assets/blob-2.png");
-  background-size: 72rem 45rem;
+  background-size: 70rem 43rem;
   background-repeat: no-repeat;
-  width: 72rem;
-  height: 45rem;
+  width: 70rem;
+  height: 43rem;
   display: inline-block;
   z-index: -1;
   position: absolute;
   bottom: 2rem;
-  left: -10rem;
+  left: -8rem;
 }
 
 .typeContainer {
@@ -452,13 +491,6 @@ ol {
 
 ol li {
   position: relative;
-}
-
-ol li a {
-  padding: 1rem 1.67rem;
-  background: #f2f2f2f2;
-  border-radius: 50%;
-  box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
 }
 
 .number:hover {
@@ -487,27 +519,93 @@ ol li a {
 }
 
 .one {
-  right: 16rem;
-  top: 2rem;
+  right: 14.5rem;
+  top: 0;
 }
 
 .two {
-  left: 12rem;
-  top: 7rem;
+  left: 14rem;
+  top: 4rem;
 }
 
 .three {
-  left: 14.5rem;
-  top: 21rem;
+  left: 17rem;
+  top: 19rem;
 }
 
 .four {
-  right: 26.5rem;
-  top: 30rem;
+  right: 24.5rem;
+  top: 28rem;
 }
 
-@media (min-width: 1440px) {
+.about {
+  background: linear-gradient(90deg, #d0d9e5 36%, #dcf4de 36%);
+}
+
+.about .wrapper {
+  padding: 8rem 0;
+  display: flex;
+}
+
+.about .wrapper .listContainer {
+  width: 36%;
+  padding-right: 8rem;
+}
+
+.about .wrapper .infoContainer {
+  width: 64%;
+  padding-left: 8rem;
+}
+
+.listContainer ol {
+  margin-top: 12.5rem;
+}
+
+.trait {
+  display: flex;
+  margin: 2.5rem 0;
+}
+
+.trait .listNumber {
+  height: 100%;
+  margin-right: 2rem;
+}
+
+.trait p {
+  margin: 0.8rem 0;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.overview .overviewText {
+  margin-right: 5rem;
+  width: 58%;
+}
+
+.picContainer {
+  width: 13.5rem;
+}
+
+.picContainer img {
+  border-radius: 50%;
+  box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.profileContainer {
+  margin-top: 5rem;
+}
+
+@media (min-width: 1500px) {
+  nav .wrapper {
+    height: 12rem;
+  }
   header {
+    background: linear-gradient(65deg, #dcf4de 57%, #d0d9e5 57%);
     height: 90rem;
   }
   header .wrapper .imageContainer {
@@ -532,19 +630,22 @@ ol li a {
     left: -12rem;
   }
   .one {
-    right: 19rem;
-    top: 10rem;
+    right: 16rem;
+    top: 11rem;
   }
   .two {
-    left: 13.5rem;
-    top: 16rem;
+    left: 15rem;
+    top: 18rem;
   }
   .three {
-    left: 16rem;
-    top: 33.5rem;
+    left: 18rem;
+    top: 35rem;
   }
   .four {
-    right: 30rem;
-    top: 44rem;
+    right: 28rem;
+    top: 46rem;
+  }
+  .about {
+    background: linear-gradient(90deg, #d0d9e5 38%, #dcf4de 38%);
   }
 }

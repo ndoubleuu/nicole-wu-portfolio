@@ -13,6 +13,22 @@ h2,
 h3 {
   font-family: $quicksand;
   font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  margin: 0;
+  font-weight: normal;
+  line-height: 2.5rem;
+  font-size: 2rem;
 }
 
 header h1 {
@@ -25,12 +41,8 @@ header h2 {
   text-align: center;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  li {
-    list-style: none;
-  }
+.sectionHeading {
+  letter-spacing: 0.5rem;
 }
 
 a {
@@ -42,4 +54,8 @@ nav a {
   font-size: 2.5rem;
   font-family: $quicksand;
   font-weight: normal;
+}
+
+p {
+  line-height: 2.8rem;
 }

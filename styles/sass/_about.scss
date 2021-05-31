@@ -1,0 +1,55 @@
+.about {
+  background: linear-gradient(90deg, $lightPurple 36%, $lightGreen 36%);
+}
+
+.about .wrapper {
+  padding: 8rem 0;
+  display: flex;
+  .listContainer {
+    width: 36%;
+    padding-right: 8rem;
+  }
+  .infoContainer {
+    width: 64%;
+    padding-left: 8rem;
+  }
+}
+
+.listContainer ol {
+  margin-top: 12.5rem;
+}
+
+.trait {
+  display: flex;
+  margin: 2.5rem 0;
+  .listNumber {
+    height: 100%;
+    margin-right: 2rem;
+  }
+  p {
+    margin: 0.8rem 0;
+  }
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  .overviewText {
+    margin-right: 5rem;
+    width: 58%;
+  }
+}
+
+.picContainer {
+  width: 13.5rem;
+  img {
+    border-radius: 50%;
+    box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+.profileContainer {
+  margin-top: 5rem;
+}

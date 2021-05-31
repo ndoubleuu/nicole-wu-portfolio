@@ -1,7 +1,7 @@
 header {
   padding-top: 8rem;
-  height: 75rem;
-  background: linear-gradient(70deg, $lightGreen 60%, $lightPurple 60%);
+  height: 70rem;
+  background: linear-gradient(65deg, $lightGreen 60%, $lightPurple 60%);
   position: relative;
   .wrapper {
     display: flex;
@@ -41,15 +41,15 @@ header::before {
 .imageContainer::after {
   content: "";
   background-image: url("../../assets/blob-2.png");
-  background-size: 72rem 45rem;
+  background-size: 70rem 43rem;
   background-repeat: no-repeat;
-  width: 72rem;
-  height: 45rem;
+  width: 70rem;
+  height: 43rem;
   display: inline-block;
   z-index: -1;
   position: absolute;
   bottom: 2rem;
-  left: -10rem;
+  left: -8rem;
 }
 
 .typeContainer {
@@ -71,12 +71,6 @@ ol {
   list-style: none;
   li {
     position: relative;
-    a {
-      padding: 1rem 1.67rem;
-      background: #f2f2f2f2;
-      border-radius: 50%;
-      box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
-    }
   }
 }
 
@@ -109,18 +103,18 @@ ol {
 }
 
 .one {
-  right: 16rem;
-  top: 2rem;
+  right: 14.5rem;
+  top: 0;
 }
 .two {
-  left: 12rem;
-  top: 7rem;
+  left: 14rem;
+  top: 4rem;
 }
 .three {
-  left: 14.5rem;
-  top: 21rem;
+  left: 17rem;
+  top: 19rem;
 }
 .four {
-  right: 26.5rem;
-  top: 30rem;
+  right: 24.5rem;
+  top: 28rem;
 }

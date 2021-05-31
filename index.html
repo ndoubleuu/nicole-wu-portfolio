@@ -7,6 +7,7 @@
     <title>Nicole Wu: Front-end Developer</title>
     <link rel="shortcut icon" type="image/jpg" href="./assets/coffee.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/styles.min.css">
 </head>
 <body>
@@ -16,37 +17,146 @@
                 <img src="./assets/nicole-wu-logo.png" alt="Nicole Wu, personal logo">
             </div>
             <ul>
-                <li><a href="">about me</a></li>
-                <li><a href="">skills & tools</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#toolkit">skills & tools</a></li>
                 <li><a href="">projects</a></li>
                 <li><a href="">contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header>
+    <header data-aos="fade" data-aos-duration="1200">
         <div class="wrapper">
             <div class="typeContainer">
                 <h1> < Hello, World! /> </h1>
                 <h2>I'm Nicole, and I'm a 
                     <span class="typer" id="main"
                         data-words="Front-end Developer.,digital designer.,history buff.,pop-punk enthusiast 🍕.,Front-end Developer."
-                        data-delay="70" data-deleteDelay="2000" data-loop="1" data-colors="#414141"></span>
+                        data-delay="85" data-deleteDelay="2000" data-loop="1" data-colors="#414141"></span>
                 </h2>
             </div>
             <div class="imageContainer">
                 <img src="./assets/self-portrait.png" alt="">
             </div>
             <ol>
-                <li class="one number"><a href="">1</a></li>
-                <li class="two number"><a href="">2</a></li>
-                <li class="three number"><a href="">3</a></li>
-                <li class="four number"><a href="">4</a></li>
+                <li class="one number"><a href="#about">1</a></li>
+                <li class="two number"><a href="#one">2</a></li>
+                <li class="three number"><a href="#two">3</a></li>
+                <li class="four number"><a href="#three">4</a></li>
             </ol>
         </div>
     </header>
-    <script src="./script.js"></script>
+
+    <main>
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="listContainer" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="sectionHeading">About Me</h2>
+                    <ol>
+                        <li class="trait" id="one">
+                            <span class="listNumber">1</span>
+                            <p>Inquisitive and creative mind, great for problem solving</p>
+                        </li>
+                        <li class="trait" id="two">
+                            <span class="listNumber">2</span>
+                            <p>Eye for design & blue light filter glasses for maximum screen time</p>
+                        </li>
+                        <li class="trait" id="three">
+                            <span class="listNumber">3</span>
+                            <p>Device equipped with text editor, git, and, of course, Zoom</p>
+                        </li>
+                        <li class="trait">
+                            <span class="listNumber">4</span>
+                            <p>!important brain fuel</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="infoContainer" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                    <div class="overview">
+                        <div class="overviewText">
+                            <h3>Nicole Wu</h3>
+                            <h4>Certificate in Web Development | Graduate Certificate in Museum & Cultural Management | BA (Hons) Ancient Mediterranean Studies</h4>
+                        </div>
+                        <div class="picContainer">
+                            <img src="./assets/nicole.jpg" alt="It's me, Nicole Wu!">
+                        </div>
+                    </div>
+                    <div class="profileContainer">
+                        <p>
+                            I am an inquisitive lifelong learner with an eye for design and a mind for development.
+                        </p>
+                        <p>
+                            Before my switch to tech, I was an emerging museum professional, passionate about exhibit development and digital
+                            heritage. My web development journey began as a means of gaining tech skills to work with digital collections, but as I
+                            built my first web page, I fell head over heels for code. Everything that drew me toward preparing exhibits translated
+                            seamlessly into web development; from thinking through minute organizational details and how they can be executed
+                            efficiently, to ensuring that both the design and content are captivating and accessible for all viewers. As a natural
+                            problem solver, who strives for precision and quality of work, web development feels like a natural (yet challenging!)
+                            next step in my career.
+                        </p>
+                        <p>
+                            When I’m not coding, I enjoy making music, creating digital doodles, weightlifting, and learning about the past!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="toolkit" id="toolkit">
+            <div class="wrapper">
+                <h2 class="sectionHeading">My Skills & Toolkit</h2>
+                <ul class="iconsContainer">
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
 
