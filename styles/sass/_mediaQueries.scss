@@ -1,6 +1,9 @@
 @media (min-width: 1500px) {
   nav .wrapper {
     height: 12rem;
+    .logoContainer {
+      width: 15rem;
+    }
   }
   header {
     background: linear-gradient(65deg, $lightGreen 57%, $lightPurple 57%);
@@ -8,12 +11,14 @@
     .wrapper .imageContainer {
       width: 65rem;
     }
-    h1 {
-      font-size: 5.3rem;
-      margin-top: 8rem;
-    }
-    h2 {
-      font-size: 3.2rem;
+    .typeContainer {
+      margin-top: 9rem;
+      h1 {
+        font-size: 5.3rem;
+      }
+      h2 {
+        font-size: 3.2rem;
+      }
     }
   }
   header::before {
@@ -29,19 +34,19 @@
   }
   .one {
     right: 16rem;
-    top: 20rem;
+    top: 15rem;
   }
   .two {
     left: 15rem;
-    top: 26.5rem;
+    top: 20rem;
   }
   .three {
     left: 18rem;
-    top: 43rem;
+    top: 38rem;
   }
   .four {
     right: 28rem;
-    top: 55rem;
+    top: 47rem;
   }
   .about {
     background: linear-gradient(90deg, $lightPurple 38%, $lightGreen 38%);
