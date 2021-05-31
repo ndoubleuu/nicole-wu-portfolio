@@ -16,9 +16,6 @@ displayButton.addEventListener("click", () => {
         listItems.forEach((item) => {
             item.classList.add("hideListItems");
         })
-        // traits.forEach((trait) => {
-        //     trait.style.marginBottom = "8rem";
-        // })
         listContainer.style.width = "10.5rem";
         infoContainer.style.width = "100%";
     } else {
@@ -30,9 +27,6 @@ displayButton.addEventListener("click", () => {
         listItems.forEach((item) => {
             item.classList.remove("hideListItems");
         })
-        // traits.forEach((trait) => {
-        //     trait.style.marginBottom = "";
-        // })
         listContainer.style.width = "";
         infoContainer.style.width = "";
     }

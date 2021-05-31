@@ -700,7 +700,7 @@ ol li {
 
 .projects {
   background: #d0d9e5;
-  padding: 5rem 0;
+  padding: 5rem 0 10rem;
 }
 
 .projects h2 {
@@ -712,8 +712,18 @@ ol li {
   background: #dcf4de;
 }
 
-.projects .projectContainer .project {
-  width: 60%;
+.project {
+  display: flex;
+  align-items: center;
+  padding: 6rem 3rem;
+}
+
+.project .projectImageContainer {
+  width: 53%;
+}
+
+.project .projectTextContainer {
+  width: 47%;
 }
 
 @media (min-width: 1500px) {
