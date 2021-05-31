@@ -1,6 +1,41 @@
 // Initialize Animate On Scroll library
 AOS.init();
 
+// Toggle show and hide listContainer in About section
+const displayButton = document.querySelector(".toggleDisplay");
+const listItems = document.querySelectorAll(".trait p");
+const traits = document.querySelectorAll(".trait");
+const listContainer = document.querySelector(".listContainer");
+const infoContainer = document.querySelector(".infoContainer");
+
+displayButton.addEventListener("click", () => {
+    console.log(listContainer.style);
+    if (listContainer.style.width === "") {
+        displayButton.innerHTML = `<i class="fas fa-angle-double-right"></i>`;
+        listItems.forEach((item) => {
+            item.classList.add("hideListItems");
+        })
+        // traits.forEach((trait) => {
+        //     trait.style.marginBottom = "8rem";
+        // })
+        listContainer.style.width = "10.5rem";
+        infoContainer.style.width = "100%";
+    } else {
+        displayButton.innerHTML = `
+            <span class="srOnly">Display traits list</span>
+            <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+        `;
+        listItems.forEach((item) => {
+            item.classList.remove("hideListItems");
+        })
+        // traits.forEach((trait) => {
+        //     trait.style.marginBottom = "";
+        // })
+        listContainer.style.width = "";
+        infoContainer.style.width = "";
+    }
+})
+
 // let i = 0;
 
 // let n = 0;

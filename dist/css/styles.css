@@ -547,33 +547,51 @@ ol li {
 }
 
 .about {
-  background: linear-gradient(90deg, #d0d9e5 36%, #dcf4de 36%);
+  background: #dcf4de;
 }
 
 .about .wrapper {
-  padding: 8rem 0;
-  min-height: 80vh;
+  padding: 5rem 0 0;
+}
+
+.about .wrapper h2 {
+  padding-bottom: 4rem;
+}
+
+.about .wrapper .flexContainer {
   display: flex;
 }
 
 .about .wrapper .listContainer {
-  font-size: 1.8rem;
-  width: 36%;
-  padding-right: 8rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  width: 30%;
+  padding: 5rem 3rem;
+  margin-right: 7rem;
+  background: #d0d9e5;
+  position: relative;
+}
+
+.about .wrapper .listContainer .toggleDisplay {
+  position: absolute;
+  top: 0;
+  right: -4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 3.5rem;
 }
 
 .about .wrapper .infoContainer {
-  width: 64%;
-  padding-left: 6rem;
-}
-
-.listContainer ol {
-  margin-top: 14rem;
+  width: 70%;
+  padding-top: 1rem;
 }
 
 .trait {
   display: flex;
-  margin: 2.5rem 0;
+  margin-bottom: 2rem;
 }
 
 .trait .listNumber {
@@ -585,16 +603,18 @@ ol li {
   margin: 0.8rem 0;
 }
 
+.hideListItems {
+  display: none;
+}
+
 .overview {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  text-align: right;
 }
 
 .overview .overviewText {
-  margin-right: 5rem;
-  width: 58%;
+  margin-left: 3rem;
+  width: 55%;
 }
 
 .picContainer {
@@ -608,6 +628,55 @@ ol li {
 
 .profileContainer {
   margin-top: 5rem;
+}
+
+.toolkit {
+  padding: 5rem 0;
+  background: #dcf4de;
+}
+
+.toolkit h2 {
+  padding-bottom: 8rem;
+  margin-top: -7rem;
+  text-align: center;
+}
+
+.headerBackground {
+  width: 100%;
+  height: 10rem;
+  background: #b2c1d8;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.iconsContainer li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconsContainer li i {
+  font-size: 8.5rem;
+  margin: 2rem 2.9rem;
+}
+
+.iconsContainer li p {
+  width: 80%;
+  text-align: center;
+}
+
+.iconsContainer .firebaseIcon {
+  margin-top: 2rem;
+  width: 10.5rem;
+}
+
+.iconsContainer .firebase p {
+  margin-top: 2.8rem;
 }
 
 @media (min-width: 1500px) {
@@ -661,6 +730,9 @@ ol li {
     top: 47rem;
   }
   .about {
-    background: linear-gradient(90deg, #d0d9e5 38%, #dcf4de 38%);
+    padding-bottom: 5rem;
+  }
+  .about .overviewText {
+    width: 100%;
   }
 }

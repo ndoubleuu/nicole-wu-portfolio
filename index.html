@@ -17,8 +17,8 @@
                 <img src="./assets/nicole-wu-logo.png" alt="Nicole Wu, personal logo">
             </div>
             <ul>
-                <li><a href="#about">about me</a></li>
-                <li><a href="#toolkit">skills & tools</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#toolkit">skills</a></li>
                 <li><a href="">projects</a></li>
                 <li><a href="">contact</a></li>
             </ul>
@@ -50,103 +50,124 @@
     <main>
         <section class="about" id="about">
             <div class="wrapper">
-                <div class="listContainer" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 class="sectionHeading">About Me</h2>
-                    <ol>
-                        <li class="trait" id="one">
-                            <span class="listNumber">1</span>
-                            <p>Inquisitive and creative mind, great for problem solving</p>
-                        </li>
-                        <li class="trait" id="two">
-                            <span class="listNumber">2</span>
-                            <p>Eye for design & blue light filter glasses for maximum screen time</p>
-                        </li>
-                        <li class="trait" id="three">
-                            <span class="listNumber">3</span>
-                            <p>Device equipped with text editor, Git, and, of course, Zoom</p>
-                        </li>
-                        <li class="trait">
-                            <span class="listNumber">4</span>
-                            <p>!important brain fuel</p>
-                        </li>
-                    </ol>
-                </div>
-                <div class="infoContainer" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
-                    <div class="overview">
-                        <div class="overviewText">
-                            <h3>Nicole Wu</h3>
-                            <h4>Certificate in <span class="bold">Web Development</span> | Graduate Certificate in <span class="bold">Museum & Cultural Management</span> | BA (Hons) <span class="bold">Ancient Mediterranean Studies</span></h4>
+                <h2 class="sectionHeading" data-aos="fade-right" data-aos-duration="1000">About Me</h2>
+                <div class="flexContainer">
+                    <aside class="listContainer" data-aos="fade-right" data-aos-duration="1000">
+                        <ol>
+                            <li class="trait" id="one">
+                                <span class="listNumber">1</span>
+                                <p>Inquisitive and creative mind, great for problem solving</p>
+                            </li>
+                            <li class="trait" id="two">
+                                <span class="listNumber">2</span>
+                                <p>Eye for design & blue light filter glasses for maximum screen time</p>
+                            </li>
+                            <li class="trait" id="three">
+                                <span class="listNumber">3</span>
+                                <p>Device equipped with text editor, Git, and Zoom</p>
+                            </li>
+                            <li class="trait">
+                                <span class="listNumber">4</span>
+                                <p>!important brain fuel</p>
+                            </li>
+                        </ol>
+                        <button class="toggleDisplay">
+                            <span class="srOnly">Hide traits list</span>
+                            <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+                        </button>
+                    </aside>
+                    <div class="infoContainer" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="overview">
+                            <div class="picContainer">
+                                <img src="./assets/nicole.png" alt="It's me, Nicole Wu!">
+                            </div>
+                            <div class="overviewText">
+                                <h3>Nicole Wu</h3>
+                                <h4>Certificate in <span class="bold">Web Development</span> | Graduate Certificate in <span class="bold">Museum & Cultural Management</span> | BA (Hons) <span class="bold">Ancient Mediterranean Studies</span></h4>
+                            </div>
                         </div>
-                        <div class="picContainer">
-                            <img src="./assets/nicole.png" alt="It's me, Nicole Wu!">
+                        <div class="profileContainer">
+                            <p>
+                                <span class="italic">Why, hello there.</span> Thanks for stopping by! I am an inquisitive lifelong learner with an eye for design and a mind for development.
+                            </p>
+                            <p>
+                                Before my switch to tech, I was an emerging museum professional, passionate about exhibit development and digital
+                                heritage. My web development journey began as a means of gaining tech skills to work with digital collections, but as I
+                                built my first web page, I fell head over heels for code. Everything that drew me toward preparing exhibits translated
+                                seamlessly into web development; from thinking through minute organizational details and how they can be executed
+                                efficiently, to ensuring that both the design and content are captivating and accessible for all audiences. As a natural
+                                problem solver, who strives for precision and quality of work, web development feels like a natural (yet challenging!)
+                                next step in my career.
+                            </p>
+                            <p>
+                                When I’m not coding, I enjoy making music, creating digital doodles, weightlifting, and learning about the past!
+                            </p>
                         </div>
-                    </div>
-                    <div class="profileContainer">
-                        <p>
-                            <span class="italic">Why, hello there.</span> Thanks for stopping by! I am an inquisitive lifelong learner with an eye for design and a mind for development.
-                        </p>
-                        <p>
-                            Before my switch to tech, I was an emerging museum professional, passionate about exhibit development and digital
-                            heritage. My web development journey began as a means of gaining tech skills to work with digital collections, but as I
-                            built my first web page, I fell head over heels for code. Everything that drew me toward preparing exhibits translated
-                            seamlessly into web development; from thinking through minute organizational details and how they can be executed
-                            efficiently, to ensuring that both the design and content are captivating and accessible for all audiences. As a natural
-                            problem solver, who strives for precision and quality of work, web development feels like a natural (yet challenging!)
-                            next step in my career.
-                        </p>
-                        <p>
-                            When I’m not coding, I enjoy making music, creating digital doodles, weightlifting, and learning about the past!
-                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="toolkit" id="toolkit">
+            <div class=headerBackground aria-hidden="true" data-aos="fade-up" data-aos-duration="1000"></div>
             <div class="wrapper">
-                <h2 class="sectionHeading">My Skills & Toolkit</h2>
-                <ul class="iconsContainer">
+                <h2 class="sectionHeading" data-aos="fade-up" data-aos-duration="1000">My Skills & Toolkit</h2>
+                <ul class="iconsContainer" data-aos="fade-up" data-aos-duration="1000">
                     <li>
-                        <img src="" alt="">
+                        <i class="fab fa-html5" aria-hidden="true"></i>
+                        <p>HTML5</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                        <p>CSS3</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fab fa-sass" aria-hidden="true"></i>
+                        <p>Sass</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fab fa-js-square" aria-hidden="true"></i>
+                        <p>JavaScript</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+                        <p>jQuery</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fab fa-react" aria-hidden="true"></i>
+                        <p>React</p>
+                    </li>
+                    <li class="firebase">
+                        <img src="./assets/firebase.png" alt="" class="firebaseIcon">
+                        <p>Firebase</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <p>GitHub</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fab fa-git-alt" aria-hidden="true"></i>
+                        <p>Git</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fas fa-terminal" aria-hidden="true"></i>
+                        <p>Command Line</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                        <p>RESTful APIs</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <p>Responsive Design</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <i class="fas fa-universal-access" aria-hidden="true"></i>
+                        <p>Web Accessibility</p>
                     </li>
                     <li>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
+                        <i class="fab fa-figma" aria-hidden="true"></i>
+                        <p>Figma</p>
                     </li>
                 </ul>
             </div>

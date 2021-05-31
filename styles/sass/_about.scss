@@ -1,29 +1,50 @@
 .about {
-  background: linear-gradient(90deg, $lightPurple 36%, $lightGreen 36%);
+  background: $lightGreen;
 }
 
 .about .wrapper {
-  padding: 8rem 0;
-  min-height: 80vh;
-  display: flex;
+  padding: 5rem 0 0;
+  // min-height: 80vh;
+  // display: flex;
+  h2 {
+    padding-bottom: 4rem;
+  }
+  .flexContainer {
+    display: flex;
+  }
   .listContainer {
-    font-size: 1.8rem;
-    width: 36%;
-    padding-right: 8rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    width: 30%;
+    padding: 5rem 3rem;
+    margin-right: 7rem;
+    background: $lightPurple;
+    position: relative;
+    .toggleDisplay {
+      position: absolute;
+      top: 0;
+      right: -4rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 3.5rem;
+    }
   }
   .infoContainer {
-    width: 64%;
-    padding-left: 6rem;
+    width: 70%;
+    padding-top: 1rem;
   }
 }
 
-.listContainer ol {
-  margin-top: 14rem;
-}
+// .listContainer ol {
+//   margin-top: 14rem;
+// }
 
 .trait {
   display: flex;
-  margin: 2.5rem 0;
+  margin-bottom: 2rem;
   .listNumber {
     height: 100%;
     margin-right: 2rem;
@@ -33,14 +54,19 @@
   }
 }
 
+.hideListItems {
+  display: none;
+}
+
 .overview {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  text-align: right;
+  // margin-top: 2rem;
+  // justify-content: flex-end;
+  // text-align: right;
   .overviewText {
-    margin-right: 5rem;
-    width: 58%;
+    margin-left: 3rem;
+    width: 55%;
   }
 }
 

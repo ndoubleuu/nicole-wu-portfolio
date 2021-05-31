@@ -49,6 +49,9 @@
     top: 47rem;
   }
   .about {
-    background: linear-gradient(90deg, $lightPurple 38%, $lightGreen 38%);
+    padding-bottom: 5rem;
+    .overviewText {
+      width: 100%;
+    }
   }
 }
