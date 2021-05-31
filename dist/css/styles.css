@@ -574,19 +574,37 @@ ol li {
   position: relative;
 }
 
-.about .wrapper .listContainer .toggleDisplay {
+.about .wrapper .infoContainer {
+  width: 70%;
+  padding-top: 1rem;
+}
+
+.toggleDisplay {
   position: absolute;
-  top: 0;
-  right: -4rem;
+  top: 1rem;
+  right: 1rem;
   background: none;
   border: none;
   cursor: pointer;
   font-size: 3.5rem;
+  transition: all 0.3s ease;
 }
 
-.about .wrapper .infoContainer {
-  width: 70%;
-  padding-top: 1rem;
+.toggleDisplay:hover {
+  animation: point 1.7s ease-in-out infinite;
+  color: #5b5b5b;
+}
+
+@keyframes point {
+  0% {
+    transform: translateX(0rem);
+  }
+  50% {
+    transform: translateX(0.6rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
 }
 
 .trait {

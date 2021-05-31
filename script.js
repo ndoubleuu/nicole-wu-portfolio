@@ -11,6 +11,7 @@ const infoContainer = document.querySelector(".infoContainer");
 displayButton.addEventListener("click", () => {
     console.log(listContainer.style);
     if (listContainer.style.width === "") {
+        displayButton.style.right = "-4rem"
         displayButton.innerHTML = `<i class="fas fa-angle-double-right"></i>`;
         listItems.forEach((item) => {
             item.classList.add("hideListItems");
@@ -21,6 +22,7 @@ displayButton.addEventListener("click", () => {
         listContainer.style.width = "10.5rem";
         infoContainer.style.width = "100%";
     } else {
+        displayButton.style.right = "2rem"
         displayButton.innerHTML = `
             <span class="srOnly">Display traits list</span>
             <i class="fas fa-angle-double-left" aria-hidden="true"></i>
