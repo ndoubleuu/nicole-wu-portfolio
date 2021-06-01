@@ -740,6 +740,9 @@ ol li {
 }
 
 @media (min-width: 1500px) {
+  html {
+    scroll-padding-top: 13rem;
+  }
   nav .wrapper {
     height: 12rem;
   }
