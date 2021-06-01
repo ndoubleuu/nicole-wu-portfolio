@@ -4,6 +4,10 @@ html {
   scroll-padding-top: 8.5rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   width: 1440px;
   max-width: 90%;

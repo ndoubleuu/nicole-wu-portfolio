@@ -58,3 +58,114 @@
     }
   }
 }
+
+@media (max-width: 1114px) {
+  header h1 {
+    font-size: 3.8rem;
+  }
+  header h2 {
+    font-size: 2.8rem;
+  }
+  .trait {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+  .about .overviewText {
+    width: 100%;
+  }
+  // .iconsContainer i {
+  //   font-size: 6rem;
+  // }
+}
+
+@media (max-width: 955px) {
+  nav {
+    li {
+      margin: 0 3rem;
+    }
+    a {
+      font-size: 2rem;
+    }
+  }
+  header {
+    height: 85rem;
+    background: linear-gradient(65deg, #dcf4de 50%, #d0d9e5 50%);
+  }
+  header .wrapper {
+    h1 {
+      width: 55%;
+    }
+    h2 {
+      width: 55%;
+    }
+    .imageContainer {
+      width: 45rem;
+    }
+  }
+  header .typeContainer {
+    margin-top: 10rem;
+  }
+  header::before {
+    background-size: 30rem 36rem;
+    bottom: -20.25rem;
+  }
+  .imageContainer::after {
+    background-size: 50rem 29rem;
+    bottom: -12.3rem;
+    left: -3rem;
+  }
+  .one {
+    right: 12.3rem;
+    top: 15rem;
+  }
+  .two {
+    left: 12rem;
+    top: 17.8rem;
+  }
+  .three {
+    left: 14rem;
+    top: 29rem;
+  }
+  .four {
+    right: 20rem;
+    top: 35rem;
+  }
+  .about .flexContainer {
+    flex-direction: column;
+  }
+  .about .wrapper .listContainer {
+    width: 100%;
+    justify-content: center;
+    .trait {
+      flex-direction: row;
+    }
+    .toggleDisplay {
+      display: none;
+    }
+  }
+  .about .wrapper .infoContainer {
+    width: 100%;
+    padding: 6rem 2rem 0;
+  }
+  .projects .projectContainer {
+    padding-top: 0;
+    .project {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .project:nth-of-type(2n + 1),
+  .project:nth-of-type(2n) {
+    .projectImageContainer {
+      margin: 0;
+    }
+    .projectTextContainer {
+      padding: 0;
+    }
+  }
+  .project .projectTextContainer,
+  .project .projectImageContainer {
+    width: 90%;
+  }
+}

@@ -26,6 +26,10 @@
   }
 }
 
+.listContainer li:nth-of-type(4) {
+  margin-bottom: 0;
+}
+
 .toggleDisplay {
   position: absolute;
   top: 1rem;
