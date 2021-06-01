@@ -132,7 +132,7 @@
     flex-direction: column;
   }
   .about .wrapper .listContainer {
-    width: 100%;
+    width: 100% !important;
     justify-content: center;
     .trait {
       flex-direction: row;
@@ -140,6 +140,9 @@
     .toggleDisplay {
       display: none;
     }
+  }
+  .hideListItems {
+    display: inherit;
   }
   .about .wrapper .infoContainer {
     width: 100%;
