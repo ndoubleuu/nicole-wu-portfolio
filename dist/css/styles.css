@@ -652,6 +652,11 @@ ol li {
   width: 50%;
 }
 
+.overview .overviewText a:hover,
+.overview .overviewText a:focus {
+  text-decoration: underline;
+}
+
 .picContainer {
   width: 13.5rem;
 }
@@ -723,6 +728,7 @@ ol li {
 
 .projects .projectContainer {
   background: #dcf4de;
+  padding: 5rem 0;
 }
 
 .project {

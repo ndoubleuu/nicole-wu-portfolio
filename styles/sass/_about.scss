@@ -76,6 +76,10 @@
   .overviewText {
     margin-left: 3rem;
     width: 50%;
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
   }
 }
 
