@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-padding-top: 8.5rem;
 }
 
 .wrapper {
@@ -23,8 +24,7 @@ ol {
 }
 
 // Shared order list number styles
-ol a,
-.listNumber {
+ol a {
   background: #f2f2f2d9;
   padding: 1rem 1.67rem;
   box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);

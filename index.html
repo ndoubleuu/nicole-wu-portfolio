@@ -14,18 +14,21 @@
     <nav>
         <div class="wrapper">
             <div class="logoContainer">
-                <img src="./assets/nicole-wu-logo.png" alt="Nicole Wu, personal logo">
+                <a href="#hero">
+                    <span class="srOnly">Scroll back to top</span>
+                    <img src="./assets/nicole-wu-logo.png" alt="Nicole Wu, personal logo">
+                </a>
             </div>
             <ul>
                 <li><a href="#about">about</a></li>
                 <li><a href="#toolkit">skills</a></li>
-                <li><a href="">projects</a></li>
+                <li><a href="#projects">projects</a></li>
                 <li><a href="">contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header data-aos="fade" data-aos-duration="1200">
+    <header id="hero" data-aos="fade" data-aos-duration="1200">
         <div class="wrapper">
             <div class="typeContainer">
                 <h1> < Hello, World! /> </h1>
@@ -39,10 +42,10 @@
                 <img src="./assets/self-portrait.png" alt="">
             </div>
             <ol>
-                <li class="one number"><a href="#about">1</a></li>
-                <li class="two number"><a href="#one">2</a></li>
-                <li class="three number"><a href="#two">3</a></li>
-                <li class="four number"><a href="#three">4</a></li>
+                <li class="one number"><a href="#one">1</a></li>
+                <li class="two number"><a href="#two">2</a></li>
+                <li class="three number"><a href="#three">3</a></li>
+                <li class="four number"><a href="#four">4</a></li>
             </ol>
         </div>
     </header>
@@ -55,19 +58,19 @@
                     <aside class="listContainer" data-aos="fade-right" data-aos-duration="1000">
                         <ol>
                             <li class="trait" id="one">
-                                <span class="listNumber">1</span>
+                                <a href="#hero" class="listNumber">1</a>
                                 <p>Inquisitive and creative mind, great for problem solving</p>
                             </li>
                             <li class="trait" id="two">
-                                <span class="listNumber">2</span>
+                                <a href="#hero" class="listNumber">2</a>
                                 <p>Eye for design & blue light filter glasses for maximum screen time</p>
                             </li>
                             <li class="trait" id="three">
-                                <span class="listNumber">3</span>
+                                <a href="#hero" class="listNumber">3</a>
                                 <p>Device equipped with text editor, Git, and Zoom</p>
                             </li>
-                            <li class="trait">
-                                <span class="listNumber">4</span>
+                            <li class="trait" id="four">
+                                <a href="#hero" class="listNumber">4</a>
                                 <p>!important brain fuel</p>
                             </li>
                         </ol>
@@ -173,7 +176,7 @@
             </div>
         </section>
         
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="wrapper">
                 <h2>My Projects</h2>
                 <div class="projectContainer">

@@ -28,10 +28,6 @@ nav li {
   }
 }
 
-// nav li:nth-child(2) {
-//   width: 10rem;
-// }
-
 // Link underline, scale from center
 nav a::after {
   content: "";
@@ -50,4 +46,9 @@ nav a::after {
 nav a:hover::after,
 nav a:focus::after {
   transform: scale(1);
+}
+
+.logoContainer a:hover::after,
+.logoContainer a:focus::after {
+  transform: scale(0);
 }

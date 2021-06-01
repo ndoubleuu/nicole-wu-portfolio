@@ -69,6 +69,18 @@ p {
   line-height: 2.8rem;
 }
 
+.listContainer {
+  font-size: 1.7rem;
+}
+
+.listContainer a {
+  font-size: 2rem;
+}
+
+.iconsContainer i {
+  font-size: 8.5rem;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -336,6 +348,7 @@ html {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-padding-top: 8.5rem;
 }
 
 .wrapper {
@@ -359,8 +372,7 @@ ol li {
   list-style: none;
 }
 
-ol a,
-.listNumber {
+ol a {
   background: #f2f2f2d9;
   padding: 1rem 1.67rem;
   box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
@@ -418,6 +430,11 @@ nav a::after {
 nav a:hover::after,
 nav a:focus::after {
   transform: scale(1);
+}
+
+.logoContainer a:hover::after,
+.logoContainer a:focus::after {
+  transform: scale(0);
 }
 
 header {
@@ -501,7 +518,8 @@ ol li {
   position: relative;
 }
 
-.number:hover {
+.number:hover,
+.listNumber:hover {
   animation: jiggle 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
 }
@@ -551,7 +569,7 @@ ol li {
 }
 
 .about .wrapper {
-  padding: 5rem 0 3rem;
+  padding: 5rem 0 8rem;
 }
 
 .about .wrapper h2 {
@@ -566,7 +584,6 @@ ol li {
   display: flex;
   align-items: center;
   border-radius: 0.5rem;
-  font-size: 1.7rem;
   width: 30%;
   padding: 5rem 3rem;
   margin-right: 7rem;
@@ -649,7 +666,7 @@ ol li {
 }
 
 .toolkit {
-  padding: 5rem 0;
+  padding-bottom: 5rem;
   background: #dcf4de;
 }
 
@@ -678,10 +695,6 @@ ol li {
   align-items: center;
   margin: 2rem 2.9rem;
   width: 10rem;
-}
-
-.iconsContainer li i {
-  font-size: 8.5rem;
 }
 
 .iconsContainer li p {
