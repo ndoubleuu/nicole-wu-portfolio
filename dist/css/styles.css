@@ -98,7 +98,7 @@ p {
 }
 
 .socialMedia {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 .socialMedia a:hover,
@@ -848,7 +848,7 @@ ol li {
 
 .contact {
   background: linear-gradient(148deg, #d0d9e5 65%, #dcf4de 65%);
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .contact h3 {
@@ -858,7 +858,7 @@ ol li {
 .contactMethods {
   display: flex;
   justify-content: center;
-  margin: 8rem auto;
+  margin: 8rem auto 6rem;
 }
 
 .contactMethods .socialMedia {
@@ -882,6 +882,11 @@ form {
 
 form button {
   margin-top: 2rem;
+}
+
+form p {
+  margin-top: 3rem;
+  text-align: center;
 }
 
 fieldset {

@@ -53,6 +53,29 @@ headerNumButtons.forEach((button) => {
     })
 })
 
+
+// ** Form spree submission
+const form = document.getElementById("contactForm");
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    const status = document.getElementById("formStatus");
+    const data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        status.textContent = "Your message is on its way! Looking forward to receiving it!";
+        form.reset()
+    }).catch(error => {
+        status.textContent = "Oops! There was a problem submitting your form."
+    });
+}
+form.addEventListener("submit", handleSubmit)
+
 // let i = 0;
 
 // let n = 0;

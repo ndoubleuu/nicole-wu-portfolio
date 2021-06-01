@@ -1,6 +1,6 @@
 .contact {
   background: linear-gradient(148deg, $lightPurple 65%, $lightGreen 65%);
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   h3 {
     width: 60%;
   }
@@ -9,7 +9,7 @@
 .contactMethods {
   display: flex;
   justify-content: center;
-  margin: 8rem auto;
+  margin: 8rem auto 6rem;
   .socialMedia {
     margin: 0.5rem 3rem 0 0;
     li {
@@ -28,6 +28,10 @@ form {
   width: 70%;
   button {
     margin-top: 2rem;
+  }
+  p {
+    margin-top: 3rem;
+    text-align: center;
   }
 }
 
