@@ -386,7 +386,7 @@ html {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scroll-padding-top: 8.5rem;
+  scroll-padding-top: 8rem;
 }
 
 body {
@@ -848,7 +848,7 @@ ol li {
 
 .contact {
   background: linear-gradient(148deg, #d0d9e5 65%, #dcf4de 65%);
-  padding-bottom: 1rem;
+  padding: 2rem 0 1rem;
 }
 
 .contact h3 {
