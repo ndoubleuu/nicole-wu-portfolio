@@ -3,33 +3,54 @@ AOS.init();
 
 // Toggle show and hide listContainer in About section
 const displayButton = document.querySelector(".toggleDisplay");
+const headerNumButtons = document.querySelectorAll(".number");
 const listItems = document.querySelectorAll(".trait p");
 const traits = document.querySelectorAll(".trait");
 const listContainer = document.querySelector(".listContainer");
 const infoContainer = document.querySelector(".infoContainer");
 
-displayButton.addEventListener("click", () => {
-    console.log(listContainer.style);
+// Define a function that will expand the traits list
+const showTraitsList = () => {
+    displayButton.style.right = "2rem"
+    displayButton.innerHTML = `
+            <span class="srOnly">Hide traits list</span>
+            <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+        `;
+    listItems.forEach((item) => {
+        item.classList.remove("hideListItems");
+    })
+    listContainer.style.width = "";
+    infoContainer.style.width = "";
+}
+
+// Define a function that hides traits list + toggles between display and hide depending on the container's width
+const toggleDisplay = () => {
     if (listContainer.style.width === "") {
         displayButton.style.right = "-4.5rem"
-        displayButton.innerHTML = `<i class="fas fa-angle-double-right"></i>`;
+        displayButton.innerHTML = `
+            <span class="srOnly">Display traits list</span>
+            <i class="fas fa-angle-double-right"></i>
+        `;
         listItems.forEach((item) => {
             item.classList.add("hideListItems");
         })
         listContainer.style.width = "10.5rem";
         infoContainer.style.width = "100%";
     } else {
-        displayButton.style.right = "2rem"
-        displayButton.innerHTML = `
-            <span class="srOnly">Display traits list</span>
-            <i class="fas fa-angle-double-left" aria-hidden="true"></i>
-        `;
-        listItems.forEach((item) => {
-            item.classList.remove("hideListItems");
-        })
-        listContainer.style.width = "";
-        infoContainer.style.width = "";
+        showTraitsList();
     }
+}
+
+// Call the toggle function (defined above) when the displayButton is clicked
+displayButton.addEventListener("click", () => {
+    toggleDisplay();
+})
+
+// When any number button in the header is clicked, expand/display the listContainer
+headerNumButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        showTraitsList();
+    })
 })
 
 // let i = 0;

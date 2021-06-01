@@ -19,5 +19,41 @@
   }
   .projectTextContainer {
     width: 47%;
+    p {
+      padding-bottom: 2rem;
+    }
+    a {
+      background: $white;
+      padding: 1rem 1.5rem;
+      border-radius: 2rem;
+      box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
+      margin-right: 1rem;
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+      &:hover,
+      &:focus {
+        border: 1px solid $black;
+      }
+    }
+  }
+}
+
+.project:nth-of-type(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+  .projectImageContainer {
+    margin-left: 5rem;
+  }
+  .projectTextContainer {
+    padding-left: 2rem;
+  }
+}
+
+.project:nth-of-type(odd) {
+  .projectImageContainer {
+    margin-right: 5rem;
+  }
+  .projectTextContainer {
+    padding-right: 2rem;
   }
 }
