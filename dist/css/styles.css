@@ -447,7 +447,7 @@ nav {
   position: fixed;
   width: 100%;
   background: #f2f2f2f2;
-  box-shadow: 0 0.2rem 1.5rem 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
   z-index: 30;
 }
 
@@ -922,6 +922,7 @@ footer {
   background: #b2c1d8;
   text-align: center;
   padding: 1.5rem 0;
+  box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 1440px) {
