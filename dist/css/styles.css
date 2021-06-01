@@ -760,7 +760,7 @@ ol li {
 .project .projectTextContainer a {
   background: #f1f1f1;
   padding: 1rem 1.5rem;
-  border-radius: 2rem;
+  border-radius: 5rem;
   box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
   margin-right: 1rem;
   border: 1px solid transparent;
@@ -769,6 +769,10 @@ ol li {
 
 .project .projectTextContainer a:hover, .project .projectTextContainer a:focus {
   border: 1px solid #414141;
+}
+
+.project .projectTextContainer a:active {
+  background: #cbcbcb;
 }
 
 .project:nth-of-type(even) {
@@ -887,36 +891,33 @@ ol li {
   header .wrapper h2 {
     width: 55%;
   }
-  header .wrapper .imageContainer {
-    width: 45rem;
-  }
   header .typeContainer {
     margin-top: 10rem;
   }
   header::before {
-    background-size: 30rem 36rem;
-    bottom: -20.25rem;
+    background-size: 35rem 41rem;
+    bottom: -15.25rem;
   }
   .imageContainer::after {
-    background-size: 50rem 29rem;
-    bottom: -12.3rem;
-    left: -3rem;
+    background-size: 55rem 33rem;
+    bottom: -8rem;
+    left: -1rem;
   }
   .one {
-    right: 12.3rem;
-    top: 15rem;
+    right: 14rem;
+    top: 7rem;
   }
   .two {
-    left: 12rem;
-    top: 17.8rem;
+    left: 14rem;
+    top: 11.2rem;
   }
   .three {
-    left: 14rem;
-    top: 29rem;
+    left: 16rem;
+    top: 26rem;
   }
   .four {
-    right: 20rem;
-    top: 35rem;
+    right: 24rem;
+    top: 34rem;
   }
   .about .flexContainer {
     flex-direction: column;
