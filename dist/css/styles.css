@@ -97,6 +97,15 @@ p {
   font-weight: normal;
 }
 
+.socialMedia {
+  font-size: 4.5rem;
+}
+
+.socialMedia a:hover,
+.socialMedia a:focus {
+  color: #606060;
+}
+
 input[type="text"],
 input[type="email"] {
   font-family: "Lato", sans-serif;
@@ -419,7 +428,6 @@ button[type="submit"] {
   padding: 1rem 1.5rem;
   border-radius: 5rem;
   box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
-  margin-right: 1rem;
   border: 1px solid transparent;
   transition: all 0.3s ease;
 }
@@ -778,7 +786,7 @@ ol li {
 
 .projects {
   background: #d0d9e5;
-  padding: 5rem 0 10rem;
+  padding: 5rem 0 5rem;
 }
 
 .projects h2 {
@@ -822,6 +830,10 @@ ol li {
   padding-left: 2rem;
 }
 
+.project:nth-of-type(even) .projectTextContainer a {
+  margin-left: 1rem;
+}
+
 .project:nth-of-type(odd) .projectImageContainer {
   margin-right: 5rem;
 }
@@ -830,22 +842,42 @@ ol li {
   padding-right: 2rem;
 }
 
+.project:nth-of-type(odd) .projectTextContainer a {
+  margin-right: 1rem;
+}
+
 .contact {
   background: linear-gradient(148deg, #d0d9e5 65%, #dcf4de 65%);
-  min-height: 80vh;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 .contact h3 {
   width: 60%;
 }
 
+.contactMethods {
+  display: flex;
+  justify-content: center;
+  margin: 8rem auto;
+}
+
+.contactMethods .socialMedia {
+  margin: 0.5rem 3rem 0 0;
+}
+
+.contactMethods .socialMedia li {
+  margin-bottom: 3rem;
+}
+
+.contactMethods .socialMedia li a {
+  transition: all 0.3s ease;
+}
+
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem auto;
-  width: 65%;
+  width: 70%;
 }
 
 form button {
@@ -872,7 +904,7 @@ fieldset {
 .formInput input[type="text"],
 .formInput input[type="email"] {
   width: 100%;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   border: none;
   margin: 0 1rem;
   box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
@@ -953,6 +985,9 @@ footer {
   }
   .contact {
     background: linear-gradient(150deg, #d0d9e5 65%, #dcf4de 65%);
+  }
+  .contact form {
+    width: 58%;
   }
 }
 

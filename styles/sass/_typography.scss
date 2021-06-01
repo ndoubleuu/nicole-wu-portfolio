@@ -95,6 +95,14 @@ p {
   font-weight: normal;
 }
 
+.socialMedia {
+  font-size: 4.5rem;
+  a:hover,
+  a:focus {
+    color: lighten($black, 12%);
+  }
+}
+
 input[type="text"],
 input[type="email"] {
   font-family: $lato;

@@ -1,9 +1,23 @@
 .contact {
   background: linear-gradient(148deg, $lightPurple 65%, $lightGreen 65%);
-  min-height: 80vh;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   h3 {
     width: 60%;
+  }
+}
+
+.contactMethods {
+  display: flex;
+  justify-content: center;
+  margin: 8rem auto;
+  .socialMedia {
+    margin: 0.5rem 3rem 0 0;
+    li {
+      margin-bottom: 3rem;
+      a {
+        transition: all 0.3s ease;
+      }
+    }
   }
 }
 
@@ -11,8 +25,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem auto;
-  width: 65%;
+  width: 70%;
   button {
     margin-top: 2rem;
   }
@@ -36,7 +49,7 @@ fieldset {
   input[type="text"],
   input[type="email"] {
     width: 100%;
-    padding: 2rem 3rem;
+    padding: 1.5rem 3rem;
     border: none;
     margin: 0 1rem;
     box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);

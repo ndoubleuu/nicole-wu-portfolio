@@ -59,6 +59,9 @@
   }
   .contact {
     background: linear-gradient(150deg, $lightPurple 65%, $lightGreen 65%);
+    form {
+      width: 58%;
+    }
   }
 }
 

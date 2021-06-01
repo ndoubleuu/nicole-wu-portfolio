@@ -1,6 +1,6 @@
 .projects {
   background: $lightPurple;
-  padding: 5rem 0 10rem;
+  padding: 5rem 0 5rem;
   h2 {
     padding-bottom: 5rem;
     text-align: center;
@@ -34,6 +34,9 @@
   }
   .projectTextContainer {
     padding-left: 2rem;
+    a {
+      margin-left: 1rem;
+    }
   }
 }
 
@@ -43,5 +46,8 @@
   }
   .projectTextContainer {
     padding-right: 2rem;
+    a {
+      margin-right: 1rem;
+    }
   }
 }
