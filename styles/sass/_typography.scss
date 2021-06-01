@@ -64,6 +64,11 @@ nav a {
   font-weight: normal;
 }
 
+.projectTextContainer a,
+button[type="submit"] {
+  font-family: $quicksand;
+}
+
 p {
   line-height: 2.8rem;
 }
@@ -82,4 +87,23 @@ p {
 .iconsContainer p {
   font-size: 1.6rem;
   line-height: 1.8rem;
+}
+
+.contact h3 {
+  font-size: 2rem;
+  font-family: $lato;
+  font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-family: $lato;
+}
+
+form textarea {
+  font-family: $lato;
+}
+
+footer {
+  font-size: 1.8rem;
 }

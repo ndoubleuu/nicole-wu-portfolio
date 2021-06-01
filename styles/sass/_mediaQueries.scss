@@ -1,4 +1,4 @@
-@media (min-width: 1500px) {
+@media (min-width: 1440px) {
   html {
     scroll-padding-top: 13rem;
   }
@@ -56,6 +56,9 @@
     .overviewText {
       width: 40%;
     }
+  }
+  .contact {
+    background: linear-gradient(150deg, $lightPurple 65%, $lightGreen 65%);
   }
 }
 
