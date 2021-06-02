@@ -694,15 +694,6 @@ ol li {
   text-align: center;
 }
 
-.iconsContainer .firebaseIcon {
-  margin-top: 0rem;
-  width: 10.5rem;
-}
-
-.iconsContainer .firebase p {
-  margin-top: 1.5rem;
-}
-
 .projects {
   background: #d0d9e5;
   padding: 5rem 0;
@@ -1124,9 +1115,6 @@ footer {
   }
   .toolkit {
     padding-bottom: 3rem;
-  }
-  .toolkit .firebaseIcon {
-    width: 7.5rem;
   }
   .iconsContainer li {
     margin: 1rem;
