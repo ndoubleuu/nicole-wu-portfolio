@@ -17,6 +17,16 @@ navButton.addEventListener("click", () => {
     }
 })
 
+// When a link in nav menu is clicked, the menu should collapse
+const links = document.querySelectorAll(".navLink");
+
+links.forEach((link) => {
+    link.addEventListener("click", () => {
+        // Remove showMenu class from navMenu so that it hides when a link is clicked
+        navMenu.classList.remove("showMenu");
+    })
+})
+
 // Toggle show and hide listContainer in About section
 const displayButton = document.querySelector(".toggleDisplay");
 const headerNumButtons = document.querySelectorAll(".number");
