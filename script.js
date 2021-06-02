@@ -119,7 +119,7 @@ async function handleSubmit(event) {
             'Accept': 'application/json'
         }
     }).then(response => {
-        status.textContent = "🙆🏻‍♀️ Thank you, your message is on its way! Looking forward to receiving it!";
+        status.textContent = "👩🏻‍💻 Thank you, your message is on its way! Looking forward to receiving it!";
         form.reset()
     }).catch(error => {
         status.textContent = "Oops! There was a problem submitting your form."
