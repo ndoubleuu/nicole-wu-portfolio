@@ -6,11 +6,16 @@ const navButton = document.querySelector(".navButton");
 const navIcon = document.querySelector(".navIcon");
 const navMenu = document.querySelector("#navMenu");
 
+// To make code more DRY- function that removes the classes that are applied when nav dropdown menu is open
+const removeOpenNavClasses = () => {
+    navIcon.classList.remove("open");
+    navMenu.classList.remove("showMenu");
+}
+
 navButton.addEventListener("click", () => {
     // Toggle between menu icon and close menu icon
     if (navIcon.classList.contains("open")) {
-        navIcon.classList.remove("open");
-        navMenu.classList.remove("showMenu");
+        removeOpenNavClasses();
     } else {
         navIcon.classList.add("open");
         navMenu.classList.add("showMenu");
@@ -23,9 +28,8 @@ const links = document.querySelectorAll(".navLink");
 links.forEach((link) => {
     link.addEventListener("click", () => {
         // Remove showMenu class from navMenu so that it hides when a link is clicked
-        navMenu.classList.remove("showMenu");
         // Remove open class from navIcon so that it changes back to hamburger icon
-        navIcon.classList.remove("open");
+        removeOpenNavClasses();
     })
 })
 
@@ -39,8 +43,7 @@ const removeShowNavClass = (largerScreen) => {
     } else {
         // If screen width is less than 845px and dropdown menu is open, close the menu
         if (navIcon.classList.contains("open")) {
-            navIcon.classList.remove("open");
-            navMenu.classList.remove("showMenu");
+            removeOpenNavClasses();
         }
     }
 }
