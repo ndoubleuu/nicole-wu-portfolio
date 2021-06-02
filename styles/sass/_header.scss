@@ -1,0 +1,121 @@
+header {
+  padding-top: 8rem;
+  height: 70rem;
+  background: linear-gradient(65deg, $lightGreen 60%, $lightPurple 60%);
+  position: relative;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      width: 40%;
+      margin-bottom: 0;
+    }
+    h2 {
+      width: 40%;
+      margin-top: 1rem;
+    }
+    .imageContainer {
+      width: 55rem;
+      margin-top: -3rem;
+      position: absolute;
+      bottom: -2rem;
+      z-index: 10;
+    }
+  }
+}
+
+header::before {
+  content: "";
+  background-image: url("../../assets/blob-1.png");
+  background-size: 50rem 56rem;
+  background-repeat: no-repeat;
+  width: 50rem;
+  height: 56rem;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.imageContainer::after {
+  content: "";
+  background-image: url("../../assets/blob-2.png");
+  background-size: 70rem 43rem;
+  background-repeat: no-repeat;
+  width: 70rem;
+  height: 43rem;
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+  bottom: 2rem;
+  left: -8rem;
+}
+
+.typeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 18rem;
+  margin-top: 1rem;
+  z-index: 15;
+}
+
+.typer {
+  display: block;
+}
+
+ol {
+  z-index: 20;
+  list-style: none;
+  li {
+    position: relative;
+  }
+}
+
+.number:hover,
+.listNumber:hover {
+  animation: jiggle 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes jiggle {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.one {
+  right: 14.5rem;
+  top: 0;
+}
+.two {
+  left: 14rem;
+  top: 4rem;
+}
+.three {
+  left: 17rem;
+  top: 19rem;
+}
+.four {
+  right: 24.5rem;
+  top: 28rem;
+}

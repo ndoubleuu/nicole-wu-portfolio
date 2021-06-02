@@ -1,0 +1,100 @@
+.about {
+  background: $lightGreen;
+}
+
+.about .wrapper {
+  padding: 5rem 0 8rem;
+  h2 {
+    padding-bottom: 5rem;
+  }
+  .flexContainer {
+    display: flex;
+  }
+  .listContainer {
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 30%;
+    padding: 5rem 3rem;
+    margin-right: 7rem;
+    background: $lightPurple;
+    position: relative;
+  }
+  .infoContainer {
+    width: 70%;
+    padding-top: 1rem;
+  }
+}
+
+.listContainer li:nth-of-type(4) {
+  margin-bottom: 0;
+}
+
+.toggleDisplay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 3.5rem;
+  transition: all 0.3s ease;
+  &:hover {
+    animation: point 1.7s ease-in-out infinite;
+    color: lighten($black, 10%);
+  }
+}
+
+@keyframes point {
+  0% {
+    transform: translateX(0rem);
+  }
+  50% {
+    transform: translateX(0.6rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+.trait {
+  display: flex;
+  margin-bottom: 2rem;
+  .listNumber {
+    height: 100%;
+    margin-right: 2rem;
+    // padding: 1rem 1.49rem;
+  }
+  p {
+    margin: 0.8rem 0;
+  }
+}
+
+.hideListItems {
+  display: none;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  .overviewText {
+    margin-left: 3rem;
+    width: 50%;
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.picContainer {
+  width: 13.5rem;
+  img {
+    border-radius: 50%;
+    box-shadow: $shadow;
+  }
+}
+
+.profileContainer {
+  margin-top: 5rem;
+}

@@ -1,0 +1,70 @@
+.contact {
+  background: linear-gradient(148deg, $lightPurple 65%, $lightGreen 65%);
+  padding: 2rem 0 1rem;
+  h3 {
+    margin-top: 1rem;
+    width: 60%;
+  }
+}
+
+.contactMethods {
+  display: flex;
+  justify-content: center;
+  margin: 8rem auto 6rem;
+  .socialMedia {
+    margin: 0.5rem 3rem 0 0;
+    li {
+      margin-bottom: 3rem;
+      a {
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  button {
+    margin-top: 2rem;
+  }
+  p {
+    margin-top: 3rem;
+    text-align: center;
+  }
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0.7rem 1rem 1.25rem;
+  width: calc(100% + 1rem);
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 1.5rem 3rem;
+    border: none;
+    margin: 0 1rem;
+    box-shadow: $shadow;
+  }
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  padding: 3rem;
+  border: none;
+  box-shadow: $shadow;
+}

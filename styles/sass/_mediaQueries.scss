@@ -1,0 +1,404 @@
+@media (min-width: 1440px) {
+  html {
+    scroll-padding-top: 13rem;
+  }
+  nav .wrapper {
+    height: 12rem;
+    .logoContainer {
+      width: 15rem;
+    }
+  }
+  header {
+    background: linear-gradient(65deg, $lightGreen 57%, $lightPurple 57%);
+    height: 98rem;
+    .wrapper .imageContainer {
+      width: 65rem;
+    }
+    .typeContainer {
+      margin-top: 9rem;
+      h1 {
+        font-size: 5.3rem;
+      }
+      h2 {
+        font-size: 3.2rem;
+      }
+    }
+  }
+  header::before {
+    background-size: 68rem 72rem;
+    width: 68rem;
+    height: 72rem;
+  }
+  .imageContainer::after {
+    background-size: 88rem 55rem;
+    width: 88rem;
+    height: 55rem;
+    left: -12rem;
+  }
+  .one {
+    right: 16rem;
+    top: 15rem;
+  }
+  .two {
+    left: 15rem;
+    top: 20rem;
+  }
+  .three {
+    left: 18rem;
+    top: 38rem;
+  }
+  .four {
+    right: 28rem;
+    top: 47rem;
+  }
+  .about {
+    padding-bottom: 5rem;
+    .overviewText {
+      width: 40%;
+    }
+  }
+  .contact {
+    background: linear-gradient(150deg, $lightPurple 65%, $lightGreen 65%);
+    form {
+      width: 58%;
+    }
+  }
+}
+
+@media (max-width: 1114px) {
+  header h1 {
+    font-size: 3.8rem;
+  }
+  header h2 {
+    font-size: 2.8rem;
+  }
+  .trait {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+  .about .overviewText {
+    width: 100%;
+  }
+  .projects .projectContainer {
+    padding-top: 0;
+    .project {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .project:nth-of-type(2n + 1),
+  .project:nth-of-type(2n) {
+    .projectImageContainer {
+      margin: 0;
+    }
+    .projectTextContainer {
+      padding: 0;
+    }
+  }
+  .project .projectTextContainer,
+  .project .projectImageContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 955px) {
+  nav {
+    li {
+      margin: 0 3rem;
+    }
+  }
+  header {
+    height: 85rem;
+    background: linear-gradient(65deg, #dcf4de 50%, #d0d9e5 50%);
+  }
+  header .wrapper {
+    h1 {
+      width: 55%;
+    }
+    h2 {
+      width: 55%;
+    }
+  }
+  header .typeContainer {
+    margin-top: 10rem;
+  }
+  header::before {
+    background-size: 35rem 41rem;
+    bottom: -15.25rem;
+  }
+  .imageContainer::after {
+    background-size: 55rem 33rem;
+    bottom: -8rem;
+    left: -1rem;
+  }
+  .one {
+    right: 14rem;
+    top: 7rem;
+  }
+  .two {
+    left: 14rem;
+    top: 11.2rem;
+  }
+  .three {
+    left: 16rem;
+    top: 26rem;
+  }
+  .four {
+    right: 24rem;
+    top: 34rem;
+  }
+  .about .flexContainer {
+    flex-direction: column;
+  }
+  .about .wrapper .listContainer {
+    width: 100% !important;
+    justify-content: center;
+    .trait {
+      flex-direction: row;
+    }
+    .toggleDisplay {
+      display: none;
+    }
+  }
+  .hideListItems {
+    display: inherit;
+  }
+  .about .wrapper .infoContainer {
+    width: 100%;
+    padding: 6rem 2rem 0;
+  }
+  .contactMethods {
+    flex-direction: column;
+    .socialMedia {
+      display: flex;
+      li {
+        margin: 2rem;
+      }
+    }
+    form {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  nav .wrapper {
+    justify-content: space-between;
+    ul {
+      flex-direction: column;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 60rem;
+      background: #f1f1f1f7;
+      padding: 5rem 0 2rem;
+      transform: translateY(-60rem);
+      li {
+        margin: 3.5rem 0;
+      }
+    }
+    button {
+      display: inherit;
+    }
+  }
+}
+
+@media (max-width: 625px) {
+  header {
+    height: 85rem;
+    background: linear-gradient(28deg, #dcf4de 45%, #d0d9e5 45%);
+    .wrapper {
+      h1,
+      h2 {
+        width: 100%;
+      }
+      .imageContainer {
+        width: 45rem;
+      }
+      .typeContainer {
+        margin-top: 8rem;
+      }
+      .imageContainer::after {
+        background-size: 47rem 27rem;
+        bottom: -14.2rem;
+      }
+    }
+    .one {
+      top: 15rem;
+      right: 12rem;
+    }
+    .two {
+      left: 12rem;
+      top: 19.2rem;
+    }
+    .three {
+      left: 14rem;
+      top: 31rem;
+    }
+    .four {
+      right: 18rem;
+      top: 35rem;
+    }
+  }
+  header::before {
+    background-size: 27rem 33rem;
+    bottom: -23.25rem;
+  }
+  .about .wrapper {
+    padding: 5rem 0;
+    .overview {
+      flex-direction: column;
+      text-align: center;
+    }
+    .overviewText {
+      margin: 2rem 0 0;
+    }
+  }
+  .contact h3 {
+    width: 100%;
+  }
+  .contactMethods {
+    margin: 4rem auto;
+  }
+  .toolkit {
+    padding-bottom: 3rem;
+    .firebaseIcon {
+      width: 7.5rem;
+    }
+  }
+  .iconsContainer li {
+    margin: 1rem;
+    i {
+      font-size: 7rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  nav .wrapper .logoContainer {
+    width: 10rem;
+  }
+  header {
+    .one {
+      top: 17rem;
+      right: 11rem;
+    }
+    .two {
+      left: 10.5rem;
+      top: 20.3rem;
+    }
+    .three {
+      left: 13rem;
+      top: 33rem;
+    }
+    .four {
+      right: 16rem;
+      top: 37rem;
+    }
+  }
+  header::before {
+    background-size: 19rem 26rem;
+    bottom: -30.6rem;
+  }
+  .sectionHeading {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+  ol,
+  .listContainer a {
+    font-size: 1.6rem;
+    a {
+      padding: 0.5rem 1.05rem;
+    }
+  }
+  .trait {
+    margin-bottom: 0;
+    .listNumber {
+      margin-top: 0.8rem;
+    }
+  }
+  .project {
+    padding: 3rem 1rem;
+  }
+  .contactMethods {
+    align-items: center;
+    .socialMedia {
+      margin: 0;
+    }
+  }
+  .formInput {
+    flex-direction: column;
+    padding-bottom: 0;
+    input[type="text"],
+    input[type="email"] {
+      margin-bottom: 1.5rem;
+    }
+  }
+  fieldset:nth-of-type(2) {
+    padding: 0 0.5rem 0;
+  }
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+  footer {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    height: 66rem;
+    .wrapper .imageContainer {
+      width: 35rem;
+    }
+    .wrapper .imageContainer::after {
+      background-size: 37rem 22rem;
+      bottom: -19.5rem;
+    }
+    .wrapper .typeContainer {
+      margin-top: 5rem;
+      h1 {
+        font-size: 3.3rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    .one {
+      top: 8rem;
+      right: 9rem;
+    }
+    .two {
+      left: 9.2rem;
+      top: 11rem;
+    }
+    .three {
+      left: 11rem;
+      top: 20rem;
+    }
+    .four {
+      right: 13rem;
+      top: 23rem;
+    }
+  }
+}
+
+@media (max-width: 368px) {
+  nav .wrapper ul {
+    height: 50rem;
+    padding: 2.5rem 0 2rem;
+  }
+  .toolkit .sectionHeading {
+    margin-top: -10rem;
+  }
+  .buttonContainer a {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem;
+  }
+}

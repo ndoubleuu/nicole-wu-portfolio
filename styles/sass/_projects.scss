@@ -1,0 +1,53 @@
+.projects {
+  background: $lightPurple;
+  padding: 5rem 0 5rem;
+  h2 {
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+  .projectContainer {
+    background: $lightGreen;
+    padding: 5rem 0;
+  }
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  padding: 6rem 3rem;
+  .projectImageContainer {
+    width: 53%;
+  }
+  .projectTextContainer {
+    width: 47%;
+    p {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.project:nth-of-type(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+  .projectImageContainer {
+    margin-left: 5rem;
+  }
+  .projectTextContainer {
+    padding-left: 2rem;
+    a {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.project:nth-of-type(odd) {
+  .projectImageContainer {
+    margin-right: 5rem;
+  }
+  .projectTextContainer {
+    padding-right: 2rem;
+    a {
+      margin-right: 1rem;
+    }
+  }
+}
