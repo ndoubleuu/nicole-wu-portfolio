@@ -24,6 +24,8 @@ links.forEach((link) => {
     link.addEventListener("click", () => {
         // Remove showMenu class from navMenu so that it hides when a link is clicked
         navMenu.classList.remove("showMenu");
+        // Remove open class from navIcon so that it changes back to hamburger icon
+        navIcon.classList.remove("open");
     })
 })
 
