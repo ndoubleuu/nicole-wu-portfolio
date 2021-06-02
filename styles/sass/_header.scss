@@ -27,7 +27,7 @@ header {
 
 header::before {
   content: "";
-  background-image: url("../../assets/blob-1.png");
+  background-image: url("../../assets/blobOne.png");
   background-size: 50rem 56rem;
   background-repeat: no-repeat;
   width: 50rem;
@@ -40,7 +40,7 @@ header::before {
 
 .imageContainer::after {
   content: "";
-  background-image: url("../../assets/blob-2.png");
+  background-image: url("../../assets/blobTwo.png");
   background-size: 70rem 43rem;
   background-repeat: no-repeat;
   width: 70rem;
