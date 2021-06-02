@@ -29,6 +29,26 @@ links.forEach((link) => {
     })
 })
 
+// Ensure that if user increases screen width while nav menu is in drop down mode, .showMenu class is removed to prevent nav links from being positioned underneath nav bar
+const largerScreen = window.matchMedia("(min-width: 845px)");
+
+const removeShowNavClass = (largerScreen) => {
+    // If screen width is greater than 845px, remove showMenu class
+    if (largerScreen.matches) {
+        navMenu.classList.remove("showMenu");
+    } else {
+        // If screen width is less than 845px and dropdown menu is open, close the menu
+        if (navIcon.classList.contains("open")) {
+            navIcon.classList.remove("open");
+            navMenu.classList.remove("showMenu");
+        }
+    }
+}
+
+largerScreen.addEventListener("change", () => {
+    removeShowNavClass(largerScreen);
+})
+
 // Toggle show and hide listContainer in About section
 const displayButton = document.querySelector(".toggleDisplay");
 const headerNumButtons = document.querySelectorAll(".number");
