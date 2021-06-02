@@ -1059,7 +1059,7 @@ footer {
   }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 640px) {
   header {
     height: 85rem;
     background: linear-gradient(28deg, #dcf4de 45%, #d0d9e5 45%);
@@ -1118,7 +1118,28 @@ footer {
     width: 100%;
   }
   .contactMethods {
+    align-items: center;
     margin: 4rem auto;
+  }
+  .contactMethods .socialMedia {
+    margin: 0;
+  }
+  .formInput {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .formInput input[type="text"],
+  .formInput input[type="email"] {
+    margin-bottom: 1.5rem;
+  }
+  fieldset:nth-of-type(2) {
+    padding: 0 0.5rem 0;
+  }
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
   }
   .toolkit {
     padding-bottom: 3rem;
@@ -1206,29 +1227,6 @@ footer {
   }
   .project {
     padding: 3rem 1rem;
-  }
-  .contactMethods {
-    align-items: center;
-  }
-  .contactMethods .socialMedia {
-    margin: 0;
-  }
-  .formInput {
-    flex-direction: column;
-    padding-bottom: 0;
-  }
-  .formInput input[type="text"],
-  .formInput input[type="email"] {
-    margin-bottom: 1.5rem;
-  }
-  fieldset:nth-of-type(2) {
-    padding: 0 0.5rem 0;
-  }
-  .contact input[type="text"],
-  .contact input[type="email"],
-  .contact textarea {
-    font-size: 1.7rem;
-    line-height: 2.3rem;
   }
   footer {
     font-size: 1.6rem;
