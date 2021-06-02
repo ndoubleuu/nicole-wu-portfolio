@@ -1121,21 +1121,27 @@ footer {
   nav .wrapper .logoContainer {
     width: 10rem;
   }
+  header {
+    height: 75rem;
+  }
+  header .wrapper .typeContainer {
+    margin-top: 5rem;
+  }
   header .one {
-    top: 17rem;
+    top: 10rem;
     right: 11rem;
   }
   header .two {
     left: 10.5rem;
-    top: 20.3rem;
+    top: 13.3rem;
   }
   header .three {
     left: 13rem;
-    top: 33rem;
+    top: 26rem;
   }
   header .four {
     right: 16rem;
-    top: 37rem;
+    top: 30.5rem;
   }
   header::before {
     background-size: 19rem 26rem;
