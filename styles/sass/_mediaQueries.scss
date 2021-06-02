@@ -194,4 +194,16 @@
       display: inherit;
     }
   }
+  .contactMethods {
+    flex-direction: column;
+    .socialMedia {
+      display: flex;
+      li {
+        margin: 2rem;
+      }
+    }
+    form {
+      width: 100%;
+    }
+  }
 }

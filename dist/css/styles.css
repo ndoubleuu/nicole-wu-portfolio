@@ -1185,4 +1185,16 @@ footer {
   nav .wrapper button {
     display: inherit;
   }
+  .contactMethods {
+    flex-direction: column;
+  }
+  .contactMethods .socialMedia {
+    display: flex;
+  }
+  .contactMethods .socialMedia li {
+    margin: 2rem;
+  }
+  .contactMethods form {
+    width: 100%;
+  }
 }
