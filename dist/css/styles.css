@@ -1128,6 +1128,28 @@ footer {
   nav .wrapper .logoContainer {
     width: 10rem;
   }
+  .navIcon {
+    height: 3rem;
+    width: 3.5rem;
+  }
+  .navIcon span {
+    height: 0.6rem;
+  }
+  .navIcon span:nth-child(1) {
+    top: 0;
+  }
+  .navIcon span:nth-child(2) {
+    top: 1.2rem;
+  }
+  .navIcon span:nth-child(3) {
+    top: 2.4rem;
+  }
+  .open span:nth-child(1) {
+    top: 1.2rem;
+  }
+  .open span:nth-child(3) {
+    top: 1.2rem;
+  }
   header {
     height: 75rem;
   }
