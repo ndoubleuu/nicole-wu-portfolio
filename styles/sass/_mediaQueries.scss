@@ -269,6 +269,12 @@
     }
     .overviewText {
       margin: 2rem 0 0;
+      h4 {
+        font-size: 1.8rem;
+      }
+      h3 {
+        margin-bottom: 1rem;
+      }
     }
   }
   .contact h3 {
@@ -355,7 +361,6 @@
   }
   .overviewText h3 {
     font-size: 2.6rem;
-    margin-bottom: 1rem;
   }
   .trait {
     margin-bottom: 0;

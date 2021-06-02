@@ -1107,6 +1107,12 @@ footer {
   .about .wrapper .overviewText {
     margin: 2rem 0 0;
   }
+  .about .wrapper .overviewText h4 {
+    font-size: 1.8rem;
+  }
+  .about .wrapper .overviewText h3 {
+    margin-bottom: 1rem;
+  }
   .contact h3 {
     width: 100%;
   }
@@ -1190,7 +1196,6 @@ footer {
   }
   .overviewText h3 {
     font-size: 2.6rem;
-    margin-bottom: 1rem;
   }
   .trait {
     margin-bottom: 0;
