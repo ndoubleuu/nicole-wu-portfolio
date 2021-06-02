@@ -1188,6 +1188,10 @@ footer {
   .listContainer a a {
     padding: 0.5rem 1.05rem;
   }
+  .overviewText h3 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
   .trait {
     margin-bottom: 0;
   }
