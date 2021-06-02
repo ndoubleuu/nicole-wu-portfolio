@@ -1027,19 +1027,19 @@ footer {
 
 @media (max-width: 845px) {
   header {
-    height: 93rem;
+    height: 95rem;
   }
   header .one {
-    top: 15rem;
+    top: 17rem;
   }
   header .two {
-    top: 19.2rem;
+    top: 21.2rem;
   }
   header .three {
-    top: 34rem;
+    top: 36rem;
   }
   header .four {
-    top: 42rem;
+    top: 44rem;
   }
   nav .wrapper {
     justify-content: space-between;
