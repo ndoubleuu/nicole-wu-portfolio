@@ -29,7 +29,7 @@ ol {
 
 // Shared order list number styles
 ol a {
-  background: #f2f2f2d9;
+  background: $white;
   padding: 1rem 1.67rem;
   box-shadow: $shadow;
   border-radius: 50%;
@@ -50,6 +50,6 @@ button[type="submit"] {
     border: 1px solid $black;
   }
   &:active {
-    background: darken($white, 15%);
+    background: darken(#fff, 15%);
   }
 }
