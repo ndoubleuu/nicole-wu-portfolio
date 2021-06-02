@@ -320,6 +320,7 @@ nav .wrapper ul {
 nav .wrapper .logoContainer {
   width: 12.5rem;
   z-index: 20;
+  margin-top: 0.5rem;
 }
 
 nav li {
