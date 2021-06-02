@@ -373,12 +373,15 @@
     text-align: center;
     font-size: 2.8rem;
   }
-  ol,
-  .listContainer a {
+  ol {
     font-size: 1.6rem;
     a {
       padding: 0.5rem 1.05rem;
     }
+  }
+  .listContainer ol a {
+    padding: 0.6rem 1.06rem;
+    font-size: 1.6rem;
   }
   .overviewText h3 {
     font-size: 2.6rem;

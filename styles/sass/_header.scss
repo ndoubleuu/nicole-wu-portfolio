@@ -74,6 +74,13 @@ ol {
   }
 }
 
+ol a {
+  background: $white;
+  padding: 1rem 1.67rem;
+  box-shadow: $shadow;
+  border-radius: 50%;
+}
+
 .number:hover,
 .listNumber:hover {
   animation: jiggle 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;

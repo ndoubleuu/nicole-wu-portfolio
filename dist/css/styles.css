@@ -266,13 +266,6 @@ ol li {
   list-style: none;
 }
 
-ol a {
-  background: #fffffff1;
-  padding: 1rem 1.67rem;
-  box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
-}
-
 .projectTextContainer a,
 button[type="submit"] {
   cursor: pointer;
@@ -502,6 +495,13 @@ ol li {
   position: relative;
 }
 
+ol a {
+  background: #fffffff1;
+  padding: 1rem 1.67rem;
+  box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
 .number:hover,
 .listNumber:hover {
   animation: jiggle 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -578,6 +578,10 @@ ol li {
 .about .wrapper .infoContainer {
   width: 70%;
   padding-top: 1rem;
+}
+
+.listContainer ol a {
+  padding: 1rem 1.57rem;
 }
 
 .listContainer li:nth-of-type(4) {
@@ -1208,13 +1212,15 @@ footer {
     text-align: center;
     font-size: 2.8rem;
   }
-  ol,
-  .listContainer a {
+  ol {
     font-size: 1.6rem;
   }
-  ol a,
-  .listContainer a a {
+  ol a {
     padding: 0.5rem 1.05rem;
+  }
+  .listContainer ol a {
+    padding: 0.6rem 1.06rem;
+    font-size: 1.6rem;
   }
   .overviewText h3 {
     font-size: 2.6rem;
