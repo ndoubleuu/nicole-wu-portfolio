@@ -1,6 +1,22 @@
 // Initialize Animate On Scroll library
 AOS.init();
 
+// Hamburger nav
+const navButton = document.querySelector(".navButton");
+const navIcon = document.querySelector(".navIcon");
+const navMenu = document.querySelector("#navMenu");
+
+navButton.addEventListener("click", () => {
+    // Toggle between menu icon and close menu icon
+    if (navIcon.classList.contains("open")) {
+        navIcon.classList.remove("open");
+        navMenu.classList.remove("showMenu");
+    } else {
+        navIcon.classList.add("open");
+        navMenu.classList.add("showMenu");
+    }
+})
+
 // Toggle show and hide listContainer in About section
 const displayButton = document.querySelector(".toggleDisplay");
 const headerNumButtons = document.querySelectorAll(".number");
@@ -11,7 +27,7 @@ const infoContainer = document.querySelector(".infoContainer");
 
 // Define a function that will expand the traits list
 const showTraitsList = () => {
-    displayButton.style.right = "2rem"
+    displayButton.style.right = "2rem";
     displayButton.innerHTML = `
             <span class="srOnly">Hide traits list</span>
             <i class="fas fa-angle-double-left" aria-hidden="true"></i>

@@ -13,9 +13,11 @@ nav {
       justify-content: flex-end;
       align-items: center;
       width: 100%;
+      transition: all 1.2s ease;
     }
     .logoContainer {
       width: 12.5rem;
+      z-index: 20;
     }
   }
 }
@@ -36,7 +38,7 @@ nav a::after {
   left: 0;
   width: 100%;
   height: 0.3rem;
-  background-color: $darkGreen;
+  background: $darkGreen;
   opacity: 1;
   transform: scale(0);
   transform-origin: center;
@@ -51,4 +53,65 @@ nav a:focus::after {
 .logoContainer a:hover::after,
 .logoContainer a:focus::after {
   transform: scale(0);
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.navIcon {
+  width: 5rem;
+  height: 4rem;
+  position: relative;
+  transform: rotate(0);
+  transition: all 0.5s ease-in-out;
+  span {
+    display: block;
+    position: absolute;
+    height: 0.8rem;
+    width: 100%;
+    background: $black;
+    border-radius: 0.9rem;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0);
+    transition: all 0.25s ease-in-out;
+  }
+  span:nth-child(1) {
+    top: 0;
+  }
+  span:nth-child(2) {
+    top: 1.5rem;
+  }
+  span:nth-child(3) {
+    top: 3rem;
+  }
+}
+
+.navIcon:hover span {
+  background: lighten($black, 12%);
+}
+
+.open {
+  span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 1.5rem;
+    left: 0.8rem;
+  }
+  span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 1.5rem;
+    left: 0.8rem;
+  }
+}
+
+.showMenu {
+  transform: translateY(8rem) !important;
 }
