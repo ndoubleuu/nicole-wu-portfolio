@@ -183,6 +183,21 @@
 }
 
 @media (max-width: 845px) {
+  header {
+    height: 93rem;
+    .one {
+      top: 15rem;
+    }
+    .two {
+      top: 19.2rem;
+    }
+    .three {
+      top: 34rem;
+    }
+    .four {
+      top: 42rem;
+    }
+  }
   nav .wrapper {
     justify-content: space-between;
     ul {

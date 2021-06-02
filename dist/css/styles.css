@@ -1026,6 +1026,21 @@ footer {
 }
 
 @media (max-width: 845px) {
+  header {
+    height: 93rem;
+  }
+  header .one {
+    top: 15rem;
+  }
+  header .two {
+    top: 19.2rem;
+  }
+  header .three {
+    top: 34rem;
+  }
+  header .four {
+    top: 42rem;
+  }
   nav .wrapper {
     justify-content: space-between;
   }
