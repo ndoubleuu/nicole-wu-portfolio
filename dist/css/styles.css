@@ -462,10 +462,12 @@ nav .wrapper ul {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  transition: all 1.2s ease;
 }
 
 nav .wrapper .logoContainer {
   width: 12.5rem;
+  z-index: 20;
 }
 
 nav li {
@@ -484,7 +486,7 @@ nav a::after {
   left: 0;
   width: 100%;
   height: 0.3rem;
-  background-color: #99c3b4;
+  background: #99c3b4;
   opacity: 1;
   transform: scale(0);
   transform-origin: center;
@@ -499,6 +501,71 @@ nav a:focus::after {
 .logoContainer a:hover::after,
 .logoContainer a:focus::after {
   transform: scale(0);
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.navIcon {
+  width: 5rem;
+  height: 4rem;
+  position: relative;
+  transform: rotate(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.navIcon span {
+  display: block;
+  position: absolute;
+  height: 0.8rem;
+  width: 100%;
+  background: #414141;
+  border-radius: 0.9rem;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0);
+  transition: all 0.25s ease-in-out;
+}
+
+.navIcon span:nth-child(1) {
+  top: 0;
+}
+
+.navIcon span:nth-child(2) {
+  top: 1.5rem;
+}
+
+.navIcon span:nth-child(3) {
+  top: 3rem;
+}
+
+.navIcon:hover span {
+  background: #606060;
+}
+
+.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 1.5rem;
+  left: 0.8rem;
+}
+
+.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 1.5rem;
+  left: 0.8rem;
+}
+
+.showMenu {
+  transform: translateY(8rem) !important;
 }
 
 header {
@@ -926,7 +993,7 @@ textarea {
 footer {
   background: #b2c1d8;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1.5rem 2rem;
   box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -1012,14 +1079,30 @@ footer {
   .about .overviewText {
     width: 100%;
   }
+  .projects .projectContainer {
+    padding-top: 0;
+  }
+  .projects .projectContainer .project {
+    flex-direction: column;
+    text-align: center;
+  }
+  .project:nth-of-type(2n + 1) .projectImageContainer,
+  .project:nth-of-type(2n) .projectImageContainer {
+    margin: 0;
+  }
+  .project:nth-of-type(2n + 1) .projectTextContainer,
+  .project:nth-of-type(2n) .projectTextContainer {
+    padding: 0;
+  }
+  .project .projectTextContainer,
+  .project .projectImageContainer {
+    width: 90%;
+  }
 }
 
 @media (max-width: 955px) {
   nav li {
     margin: 0 3rem;
-  }
-  nav a {
-    font-size: 2rem;
   }
   header {
     height: 85rem;
@@ -1079,23 +1162,27 @@ footer {
     width: 100%;
     padding: 6rem 2rem 0;
   }
-  .projects .projectContainer {
-    padding-top: 0;
+}
+
+@media (max-width: 845px) {
+  nav .wrapper {
+    justify-content: space-between;
   }
-  .projects .projectContainer .project {
+  nav .wrapper ul {
     flex-direction: column;
-    text-align: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60rem;
+    background: #f1f1f1f7;
+    padding: 5rem 0 2rem;
+    transform: translateY(-60rem);
   }
-  .project:nth-of-type(2n + 1) .projectImageContainer,
-  .project:nth-of-type(2n) .projectImageContainer {
-    margin: 0;
+  nav .wrapper ul li {
+    margin: 3.5rem 0;
   }
-  .project:nth-of-type(2n + 1) .projectTextContainer,
-  .project:nth-of-type(2n) .projectTextContainer {
-    padding: 0;
-  }
-  .project .projectTextContainer,
-  .project .projectImageContainer {
-    width: 90%;
+  nav .wrapper button {
+    display: inherit;
   }
 }

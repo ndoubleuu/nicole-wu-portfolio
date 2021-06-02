@@ -80,6 +80,26 @@
   .about .overviewText {
     width: 100%;
   }
+  .projects .projectContainer {
+    padding-top: 0;
+    .project {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .project:nth-of-type(2n + 1),
+  .project:nth-of-type(2n) {
+    .projectImageContainer {
+      margin: 0;
+    }
+    .projectTextContainer {
+      padding: 0;
+    }
+  }
+  .project .projectTextContainer,
+  .project .projectImageContainer {
+    width: 90%;
+  }
   // .iconsContainer i {
   //   font-size: 6rem;
   // }
@@ -89,9 +109,6 @@
   nav {
     li {
       margin: 0 3rem;
-    }
-    a {
-      font-size: 2rem;
     }
   }
   header {
@@ -154,24 +171,27 @@
     width: 100%;
     padding: 6rem 2rem 0;
   }
-  .projects .projectContainer {
-    padding-top: 0;
-    .project {
+}
+
+@media (max-width: 845px) {
+  nav .wrapper {
+    justify-content: space-between;
+    ul {
       flex-direction: column;
-      text-align: center;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 60rem;
+      background: #f1f1f1f7;
+      padding: 5rem 0 2rem;
+      transform: translateY(-60rem);
+      li {
+        margin: 3.5rem 0;
+      }
     }
-  }
-  .project:nth-of-type(2n + 1),
-  .project:nth-of-type(2n) {
-    .projectImageContainer {
-      margin: 0;
+    button {
+      display: inherit;
     }
-    .projectTextContainer {
-      padding: 0;
-    }
-  }
-  .project .projectTextContainer,
-  .project .projectImageContainer {
-    width: 90%;
   }
 }

@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/jpg" href="./assets/coffee.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/css/styles.min.css">
+    <link rel="stylesheet" href="./dist/css/styles.css">
 </head>
 <body>
     <nav>
@@ -19,12 +19,20 @@
                     <img src="./assets/nicole-wu-logo.png" alt="Nicole Wu, personal logo">
                 </a>
             </div>
-            <ul>
+            <ul id="navMenu">
                 <li><a href="#about">about</a></li>
                 <li><a href="#toolkit">skills</a></li>
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
+            <button class="navButton">
+                <span class="srOnly">Navigation menu</span>
+                <div class="navIcon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
         </div>
     </nav>
 
@@ -71,7 +79,7 @@
                             </li>
                             <li class="trait">
                                 <a href="#hero" class="listNumber">4</a>
-                                <p>!important brain fuel</p>
+                                <p>brain fuel !important </p>
                             </li>
                         </ol>
                         <button class="toggleDisplay">
@@ -91,7 +99,7 @@
                         </div>
                         <div class="profileContainer">
                             <p>
-                                <span class="italic">Why, hello there.</span> Thanks for stopping by! I am an inquisitive lifelong learner with an eye for design and a mind for development.
+                                <span class="italic">Why, hello there.</span> Thanks for stopping by! I am an inquisitive front-end developer and lifelong learner with an eye for design and a mind for development.
                             </p>
                             <p>
                                 Before my switch to tech, I was an emerging museum professional, passionate about exhibit development and digital
