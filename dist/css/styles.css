@@ -120,6 +120,10 @@ footer {
   font-size: 1.8rem;
 }
 
+footer a {
+  text-decoration: underline;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
