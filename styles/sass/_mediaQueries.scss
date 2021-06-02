@@ -100,9 +100,6 @@
   .project .projectImageContainer {
     width: 90%;
   }
-  // .iconsContainer i {
-  //   font-size: 6rem;
-  // }
 }
 
 @media (max-width: 955px) {
@@ -210,7 +207,7 @@
 
 @media (max-width: 625px) {
   header {
-    height: 75rem;
+    height: 85rem;
     background: linear-gradient(28deg, #dcf4de 45%, #d0d9e5 45%);
     .wrapper {
       h1,
@@ -229,19 +226,20 @@
       }
     }
     .one {
-      right: 12.5rem;
+      top: 15rem;
+      right: 12rem;
     }
     .two {
       left: 12rem;
-      top: 9.2rem;
+      top: 19.2rem;
     }
     .three {
       left: 14rem;
-      top: 21rem;
+      top: 31rem;
     }
     .four {
-      right: 20rem;
-      top: 27rem;
+      right: 18rem;
+      top: 35rem;
     }
   }
   header::before {
@@ -250,11 +248,157 @@
   }
   .about .wrapper {
     padding: 5rem 0;
+    .overview {
+      flex-direction: column;
+      text-align: center;
+    }
+    .overviewText {
+      margin: 2rem 0 0;
+    }
   }
   .contact h3 {
     width: 100%;
   }
   .contactMethods {
     margin: 4rem auto;
+  }
+  .toolkit {
+    padding-bottom: 3rem;
+    .firebaseIcon {
+      width: 7.5rem;
+    }
+  }
+  .iconsContainer li {
+    margin: 1rem;
+    i {
+      font-size: 7rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  nav .wrapper .logoContainer {
+    width: 10rem;
+  }
+  header {
+    .one {
+      top: 17rem;
+      right: 11rem;
+    }
+    .two {
+      left: 10.5rem;
+      top: 20.3rem;
+    }
+    .three {
+      left: 13rem;
+      top: 33rem;
+    }
+    .four {
+      right: 16rem;
+      top: 37rem;
+    }
+  }
+  header::before {
+    background-size: 19rem 26rem;
+    bottom: -30.6rem;
+  }
+  .sectionHeading {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+  ol,
+  .listContainer a {
+    font-size: 1.6rem;
+    a {
+      padding: 0.5rem 1.05rem;
+    }
+  }
+  .trait {
+    margin-bottom: 0;
+    .listNumber {
+      margin-top: 0.8rem;
+    }
+  }
+  .project {
+    padding: 3rem 1rem;
+  }
+  .contactMethods {
+    align-items: center;
+    .socialMedia {
+      margin: 0;
+    }
+  }
+  .formInput {
+    flex-direction: column;
+    padding-bottom: 0;
+    input[type="text"],
+    input[type="email"] {
+      margin-bottom: 1.5rem;
+    }
+  }
+  fieldset:nth-of-type(2) {
+    padding: 0 0.5rem 0;
+  }
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+  footer {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    height: 66rem;
+    .wrapper .imageContainer {
+      width: 35rem;
+    }
+    .wrapper .imageContainer::after {
+      background-size: 37rem 22rem;
+      bottom: -19.5rem;
+    }
+    .wrapper .typeContainer {
+      margin-top: 5rem;
+      h1 {
+        font-size: 3.3rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    .one {
+      top: 8rem;
+      right: 9rem;
+    }
+    .two {
+      left: 9.2rem;
+      top: 11rem;
+    }
+    .three {
+      left: 11rem;
+      top: 20rem;
+    }
+    .four {
+      right: 13rem;
+      top: 23rem;
+    }
+  }
+}
+
+@media (max-width: 368px) {
+  nav .wrapper ul {
+    height: 50rem;
+    padding: 2.5rem 0 2rem;
+  }
+  .toolkit .sectionHeading {
+    margin-top: -10rem;
+  }
+  .buttonContainer a {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem;
   }
 }
