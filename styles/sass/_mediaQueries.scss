@@ -8,6 +8,9 @@
       width: 15rem;
     }
   }
+  nav li {
+    margin: 0 5rem;
+  }
   header {
     background: linear-gradient(65deg, $lightGreen 57%, $lightPurple 57%);
     height: 98rem;
@@ -52,9 +55,9 @@
     top: 47rem;
   }
   .about {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     .overviewText {
-      width: 40%;
+      width: 50rem;
     }
   }
   .contact {
@@ -80,6 +83,9 @@
   .about .overviewText {
     width: 100%;
   }
+  .about .wrapper .infoContainer {
+    padding: 1rem 0 0;
+  }
   .projects .projectContainer {
     padding-top: 0;
     .project {
@@ -103,10 +109,8 @@
 }
 
 @media (max-width: 955px) {
-  nav {
-    li {
-      margin: 0 3rem;
-    }
+  nav li {
+    margin: 0 3rem;
   }
   header {
     height: 85rem;

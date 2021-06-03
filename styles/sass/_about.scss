@@ -3,7 +3,7 @@
 }
 
 .about .wrapper {
-  padding: 5rem 0 8rem;
+  padding: 5rem 0 6rem;
   h2 {
     padding-bottom: 5rem;
   }
@@ -22,12 +22,12 @@
   }
   .infoContainer {
     width: 70%;
-    padding-top: 1rem;
+    padding: 1rem 1rem 0 5rem;
   }
 }
 
 .listContainer ol a {
-  padding: 1rem 1.57rem;
+  padding: 1.1rem 1.67rem;
 }
 
 .listContainer li:nth-of-type(4) {
@@ -83,7 +83,7 @@
   align-items: center;
   .overviewText {
     margin-left: 3rem;
-    width: 50%;
+    width: 35rem;
     a:hover,
     a:focus {
       text-decoration: underline;

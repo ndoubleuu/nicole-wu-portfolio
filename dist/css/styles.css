@@ -246,7 +246,7 @@ body {
 }
 
 .wrapper {
-  width: 1440px;
+  width: 1280px;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -317,12 +317,29 @@ nav .wrapper .logoContainer {
 }
 
 nav li {
-  margin: 0 5rem;
+  margin: 0 4rem;
 }
 
 nav li a {
   position: relative;
   padding: 0.3rem 0;
+}
+
+.contactButton {
+  background: #dcf4de;
+  border-radius: 5rem;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover, .contactButton:focus {
+  background: #a2c2b5;
+}
+
+.contactButton::after {
+  content: "";
+  background: none;
 }
 
 nav a::after {
@@ -332,7 +349,7 @@ nav a::after {
   left: 0;
   width: 100%;
   height: 0.3rem;
-  background: #99c3b4;
+  background: #a2c2b5;
   opacity: 1;
   transform: scale(0);
   transform-origin: center;
@@ -553,7 +570,7 @@ ol a {
 }
 
 .about .wrapper {
-  padding: 5rem 0 8rem;
+  padding: 5rem 0 6rem;
 }
 
 .about .wrapper h2 {
@@ -577,11 +594,11 @@ ol a {
 
 .about .wrapper .infoContainer {
   width: 70%;
-  padding-top: 1rem;
+  padding: 1rem 1rem 0 5rem;
 }
 
 .listContainer ol a {
-  padding: 1rem 1.57rem;
+  padding: 1.1rem 1.67rem;
 }
 
 .listContainer li:nth-of-type(4) {
@@ -641,7 +658,7 @@ ol a {
 
 .overview .overviewText {
   margin-left: 3rem;
-  width: 50%;
+  width: 35rem;
 }
 
 .overview .overviewText a:hover,
@@ -856,6 +873,9 @@ footer {
   nav .wrapper .logoContainer {
     width: 15rem;
   }
+  nav li {
+    margin: 0 5rem;
+  }
   header {
     background: linear-gradient(65deg, #dcf4de 57%, #d0d9e5 57%);
     height: 98rem;
@@ -900,10 +920,10 @@ footer {
     top: 47rem;
   }
   .about {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
   }
   .about .overviewText {
-    width: 40%;
+    width: 50rem;
   }
   .contact {
     background: linear-gradient(150deg, #d0d9e5 65%, #dcf4de 65%);
@@ -927,6 +947,9 @@ footer {
   }
   .about .overviewText {
     width: 100%;
+  }
+  .about .wrapper .infoContainer {
+    padding: 1rem 0 0;
   }
   .projects .projectContainer {
     padding-top: 0;
