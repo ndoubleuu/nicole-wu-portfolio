@@ -65,6 +65,13 @@ nav a {
   font-weight: normal;
 }
 
+.overviewText a:hover,
+.overviewText a:focus,
+.credit:hover,
+.credit:focus {
+  text-decoration: underline;
+}
+
 .buttonContainer a,
 button[type="submit"] {
   font-family: "Quicksand", sans-serif;
@@ -663,11 +670,6 @@ ol a {
 .overview .overviewText {
   margin-left: 3rem;
   width: 35rem;
-}
-
-.overview .overviewText a:hover,
-.overview .overviewText a:focus {
-  text-decoration: underline;
 }
 
 .picContainer {

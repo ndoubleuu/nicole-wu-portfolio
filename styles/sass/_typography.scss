@@ -64,6 +64,13 @@ nav a {
   font-weight: normal;
 }
 
+.overviewText a:hover,
+.overviewText a:focus,
+.credit:hover,
+.credit:focus {
+  text-decoration: underline;
+}
+
 .buttonContainer a,
 button[type="submit"] {
   font-family: $quicksand;
