@@ -64,9 +64,13 @@ nav a {
   font-weight: normal;
 }
 
-.projectTextContainer a,
+.buttonContainer a,
 button[type="submit"] {
   font-family: $quicksand;
+}
+
+.credit {
+  font-weight: bold;
 }
 
 p,

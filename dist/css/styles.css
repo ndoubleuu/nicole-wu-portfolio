@@ -65,9 +65,13 @@ nav a {
   font-weight: normal;
 }
 
-.projectTextContainer a,
+.buttonContainer a,
 button[type="submit"] {
   font-family: "Quicksand", sans-serif;
+}
+
+.credit {
+  font-weight: bold;
 }
 
 p,
@@ -266,7 +270,7 @@ ol li {
   list-style: none;
 }
 
-.projectTextContainer a,
+.projectTextContainer .buttonContainer a,
 button[type="submit"] {
   cursor: pointer;
   background: #fffffffa;
@@ -277,13 +281,13 @@ button[type="submit"] {
   transition: all 0.3s ease;
 }
 
-.projectTextContainer a:hover, .projectTextContainer a:focus,
+.projectTextContainer .buttonContainer a:hover, .projectTextContainer .buttonContainer a:focus,
 button[type="submit"]:hover,
 button[type="submit"]:focus {
   border: 1px solid #414141;
 }
 
-.projectTextContainer a:active,
+.projectTextContainer .buttonContainer a:active,
 button[type="submit"]:active {
   background: #d9d9d9;
 }
@@ -762,7 +766,7 @@ ol a {
   padding-left: 2rem;
 }
 
-.project:nth-of-type(even) .projectTextContainer a {
+.project:nth-of-type(even) .projectTextContainer .buttonContainer a {
   margin-left: 1rem;
 }
 
@@ -774,7 +778,7 @@ ol a {
   padding-right: 2rem;
 }
 
-.project:nth-of-type(odd) .projectTextContainer a {
+.project:nth-of-type(odd) .projectTextContainer .buttonContainer a {
   margin-right: 1rem;
 }
 
