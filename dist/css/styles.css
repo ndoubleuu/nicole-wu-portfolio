@@ -1234,6 +1234,9 @@ footer {
   .project {
     padding: 3rem 1rem;
   }
+  .contact h3 {
+    text-align: center;
+  }
   footer {
     font-size: 1.6rem;
   }
