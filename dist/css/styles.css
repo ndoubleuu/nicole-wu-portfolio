@@ -269,7 +269,7 @@ ol li {
 .projectTextContainer a,
 button[type="submit"] {
   cursor: pointer;
-  background: #fffffff6;
+  background: #fffffffa;
   padding: 1rem 1.5rem;
   border-radius: 5rem;
   box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
@@ -291,7 +291,7 @@ button[type="submit"]:active {
 nav {
   position: fixed;
   width: 100%;
-  background: #fffffff6;
+  background: #fffffffa;
   box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
   z-index: 30;
 }
@@ -428,7 +428,7 @@ nav button {
 }
 
 .showMenu {
-  transform: translateY(8rem) !important;
+  transform: translateY(0) !important;
 }
 
 header {
@@ -513,7 +513,7 @@ ol li {
 }
 
 ol a {
-  background: #fffffff6;
+  background: #fffffffa;
   padding: 1rem 1.67rem;
   box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
   border-radius: 50%;
@@ -1069,14 +1069,14 @@ footer {
   }
   nav .wrapper ul {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     position: fixed;
     top: 0;
     right: 0;
-    height: 62rem;
-    background: #fffffff6;
+    height: 60rem;
+    background: #fffffffa;
     padding: 5rem 0 2rem;
-    transform: translateY(-62rem);
+    transform: translateY(-60rem);
   }
   nav .wrapper ul li {
     margin: 3.5rem 0;
@@ -1308,10 +1308,6 @@ footer {
 }
 
 @media (max-width: 368px) {
-  nav .wrapper ul {
-    height: 50rem;
-    padding: 2.5rem 0 2rem;
-  }
   .toolkit .sectionHeading {
     margin-top: -10rem;
   }

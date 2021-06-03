@@ -206,14 +206,14 @@
     justify-content: space-between;
     ul {
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       position: fixed;
       top: 0;
       right: 0;
-      height: 62rem;
+      height: 60rem;
       background: $white;
       padding: 5rem 0 2rem;
-      transform: translateY(-62rem);
+      transform: translateY(-60rem);
       li {
         margin: 3.5rem 0;
       }
@@ -450,10 +450,6 @@
 }
 
 @media (max-width: 368px) {
-  nav .wrapper ul {
-    height: 50rem;
-    padding: 2.5rem 0 2rem;
-  }
   .toolkit .sectionHeading {
     margin-top: -10rem;
   }
