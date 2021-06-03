@@ -64,8 +64,8 @@ const infoContainer = document.querySelector(".infoContainer");
 const showTraitsList = () => {
     displayButton.style.right = "2rem";
     displayButton.innerHTML = `
-            <span class="srOnly">Hide traits list</span>
-            <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+            <span class="srOnly">Minimize traits list</span>
+            <i class="fas fa-angle-double-left" aria-hidden="true" title="Minimize section"></i>
         `;
     listItems.forEach((item) => {
         item.classList.remove("hideListItems");
@@ -79,8 +79,8 @@ const toggleDisplay = () => {
     if (listContainer.style.width === "") {
         displayButton.style.right = "-4.5rem"
         displayButton.innerHTML = `
-            <span class="srOnly">Display traits list</span>
-            <i class="fas fa-angle-double-right"></i>
+            <span class="srOnly">Expand traits list</span>
+            <i class="fas fa-angle-double-right" title="Expand section"></i>
         `;
         listItems.forEach((item) => {
             item.classList.add("hideListItems");
