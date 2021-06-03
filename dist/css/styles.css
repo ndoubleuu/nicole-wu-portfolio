@@ -584,7 +584,7 @@ ol a {
 .about .wrapper .listContainer {
   display: flex;
   align-items: center;
-  border-radius: 0.5rem;
+  border-top-right-radius: 5rem;
   width: 30%;
   padding: 5rem 3rem;
   margin-right: 7rem;
@@ -607,8 +607,8 @@ ol a {
 
 .toggleDisplay {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 2rem;
+  right: 2.5rem;
   background: none;
   border: none;
   cursor: pointer;

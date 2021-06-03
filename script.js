@@ -62,7 +62,7 @@ const infoContainer = document.querySelector(".infoContainer");
 
 // Define a function that will expand the traits list
 const showTraitsList = () => {
-    displayButton.style.right = "2rem";
+    displayButton.style.right = "2.5rem";
     displayButton.innerHTML = `
             <span class="srOnly">Minimize traits list</span>
             <i class="fas fa-angle-double-left" aria-hidden="true" title="Minimize section"></i>
