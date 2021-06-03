@@ -126,3 +126,15 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit)
+
+console.group(
+    "%cHello!",
+    "background-color: #d0d9e5; font-size: 2rem; font-family: 'Quicksand'"
+)
+console.log("I just wanted to say...")
+console.log("Thanks for viewing my portfolio!");
+console.log("There's nothing else to see in the console, but I'm glad you checked. 🤗");
+console.log("...")
+console.log("Oh! But before you go, I also just wanted to let you know that I'm looking for new opportunities. Feel free to reach out!");
+console.log("Have a wonderful day!")
+console.groupEnd();
