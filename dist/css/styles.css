@@ -65,10 +65,16 @@ nav a {
   font-weight: normal;
 }
 
+.toggleDisplay {
+  font-size: 3.5rem;
+}
+
 .overviewText a:hover,
 .overviewText a:focus,
 .credit:hover,
-.credit:focus {
+.credit:focus,
+.profileContainer a:hover,
+.profileContainer a:focus {
   text-decoration: underline;
 }
 
@@ -77,7 +83,8 @@ button[type="submit"] {
   font-family: "Quicksand", sans-serif;
 }
 
-.credit {
+.credit,
+.profileContainer a {
   font-weight: bold;
 }
 
@@ -623,7 +630,6 @@ ol a {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 3.5rem;
   transition: all 0.3s ease;
 }
 
