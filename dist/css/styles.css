@@ -834,8 +834,7 @@ form p {
   text-align: center;
 }
 
-fieldset {
-  border: none;
+form div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -847,7 +846,7 @@ fieldset {
   flex-direction: row;
   justify-content: center;
   margin: 0;
-  padding: 0.7rem 1rem 1.25rem;
+  padding: 0.7rem 0rem 1.25rem;
   width: calc(100% + 1rem);
 }
 
@@ -856,7 +855,7 @@ fieldset {
   width: 100%;
   padding: 1.5rem 3rem;
   border: none;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   box-shadow: 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -1166,6 +1165,7 @@ footer {
   .formInput {
     flex-direction: column;
     padding-bottom: 0;
+    width: 100%;
   }
   .formInput input[type="text"],
   .formInput input[type="email"] {
