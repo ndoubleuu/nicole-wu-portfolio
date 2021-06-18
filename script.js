@@ -33,6 +33,13 @@ links.forEach((link) => {
     })
 })
 
+// When logo is clicked, remove showMenu class so that dropdown menu closes
+const logo = document.querySelector(".logoContainer a");
+
+logo.addEventListener("click", () => {
+    removeOpenNavClasses();
+})
+
 // Ensure that if user increases screen width while nav menu is in drop down mode, .showMenu class is removed to prevent nav links from being positioned underneath nav bar
 const largerScreen = window.matchMedia("(min-width: 845px)");
 
