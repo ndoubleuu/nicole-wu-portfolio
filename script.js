@@ -1,6 +1,11 @@
 // Initialize Animate On Scroll library
 AOS.init();
 
+// headroom.js setup
+const navbar = document.querySelector("nav");
+const headroom = new Headroom(navbar);
+headroom.init();
+
 // Hamburger nav
 const navButton = document.querySelector(".navButton");
 const navIcon = document.querySelector(".navIcon");

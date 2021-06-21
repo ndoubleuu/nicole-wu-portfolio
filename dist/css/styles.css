@@ -449,6 +449,19 @@ nav button {
   transform: translateY(0) !important;
 }
 
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
 header {
   padding-top: 8rem;
   height: 70rem;
