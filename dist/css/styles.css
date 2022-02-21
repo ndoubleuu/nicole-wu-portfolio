@@ -81,6 +81,7 @@ nav a {
 .buttonContainer a,
 button[type="submit"] {
   font-family: "Quicksand", sans-serif;
+  color: #414141;
 }
 
 .credit,
